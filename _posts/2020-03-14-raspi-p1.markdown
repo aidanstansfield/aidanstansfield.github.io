@@ -1,0 +1,30 @@
+---
+layout: post
+title: "The Raspberry Pi Project: Part 1 - The Context"
+date: 2020-03-14 19:30
+categories: [home automation, development]
+tags: [raspberry, pi, nginx, lets encrypt, openvpn, duckdns, pihole]
+---
+So I recently acquired a [Raspberry Pi 4 with 4GB of RAM][raspi4gb] accompanied by a fantastic [FLIRC case][flirc] to replace my Raspberry Pi 3B+. Up until now, I had been using my Raspberry Pi 3B+ for a mix of things, including:
+1. A web server running [NGINX][nginx], with automated SSL certs from [Let's Encrypt][letsencrypt] so I can serve cool web content I develop.
+2. A DNS server running [Pihole][pihole] to block ads on my network
+3. An [OpenVPN][openvpn] server so I can VPN into my home network from wherever
+4. A Dynamic DNS updater for [DuckDNS][duckdns], so I don't have to deal with pesky IP addresses.
+5. A development environment for various embedded systems projects that use the Pi's GPIO pins.
+
+So now comes the fun part of migrating all of these services over to the new Pi. Unfortuantely, since the Raspberry Pi 4 runs on a newer version of Raspbian (Buster), it's not just a simple case of swapping over the SD cards and it all working.
+
+So I started thinking to myself, 
+>How can I make this migration/setup easier for the future?
+
+The answer I eventually arrived at, **Docker & Docker Compose.** The reason I decided upon this approach is that in the event that my SD card dies, or I want to setup a new SD card for X reason, all I should have to do is install the OS and Docker/Docker Compose, and then **BAM** everything is up and running with a few `docker-compose up`'s. Sounds easy, right?
+
+Well that's what I thought when I set out on this journey, but boy did I have a few late nights. In this series, I plan to detail this journey, rabbit holes and source code included. Stay tuned!
+
+[raspi4gb]: https://core-electronics.com.au/raspberry-pi-4-model-b-4gb.html
+[flirc]: https://core-electronics.com.au/flirc-raspberry-pi-4-case.html
+[pihole]: https://pi-hole.net/
+[nginx]: https://www.nginx.com/
+[letsencrypt]: https://letsencrypt.org/
+[openvpn]: https://openvpn.net/
+[duckdns]: https://www.duckdns.org/

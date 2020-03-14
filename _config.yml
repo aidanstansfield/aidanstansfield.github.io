@@ -20,6 +20,9 @@ description: >- # this means to ignore newlines until "baseurl:"
   In this blog you can expect to find writeups of various home/personal projects, as well as hackthebox/ctf writeups. Hope you enjoy!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://aidanstansfield.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+timezone: Australia/Brisbane
+
+# social usernames
 twitter_username: aidanstansfield
 github_username: aidanstansfield
 linkedin_username: aidanstansfield
