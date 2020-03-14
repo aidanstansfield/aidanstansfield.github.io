@@ -1,13 +1,111 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="https://aidanstansfield.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://aidanstansfield.github.io/" rel="alternate" type="text/html" /><updated>2020-03-14T16:10:45+10:00</updated><id>https://aidanstansfield.github.io/feed.xml</id><title type="html">Aidan’s Blog</title><subtitle>G'day, I'm Aidan and I like to make things, almost as much as I like to break things. In this blog you can expect to find writeups of various home/personal projects, as well as hackthebox/ctf writeups. Hope you enjoy!</subtitle><entry><title type="html">Welcome to Jekyll!</title><link href="https://aidanstansfield.github.io/jekyll/update/2020/02/26/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2020-02-26T15:26:58+10:00</published><updated>2020-02-26T15:26:58+10:00</updated><id>https://aidanstansfield.github.io/jekyll/update/2020/02/26/welcome-to-jekyll</id><content type="html" xml:base="https://aidanstansfield.github.io/jekyll/update/2020/02/26/welcome-to-jekyll.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="https://aidanstansfield.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://aidanstansfield.github.io/" rel="alternate" type="text/html" /><updated>2020-03-14T16:14:38+10:00</updated><id>https://aidanstansfield.github.io/feed.xml</id><title type="html">Aidan’s Blog</title><subtitle>G'day, I'm Aidan and I like to make things, almost as much as I like to break things. In this blog you can expect to find writeups of various home/personal projects, as well as hackthebox/ctf writeups. Hope you enjoy!</subtitle><entry><title type="html">Welcome to my blog!</title><link href="https://aidanstansfield.github.io/2020/03/14/welcome-to-my-blog.html" rel="alternate" type="text/html" title="Welcome to my blog!" /><published>2020-03-14T14:26:58+10:00</published><updated>2020-03-14T14:26:58+10:00</updated><id>https://aidanstansfield.github.io/2020/03/14/welcome-to-my-blog</id><content type="html" xml:base="https://aidanstansfield.github.io/2020/03/14/welcome-to-my-blog.html">&lt;p&gt;G’day! Today marks the day that I finally became &lt;em&gt;one of those guys&lt;/em&gt; who has his own blog. The main reason for making this blog is so that I can show it off to other people (emplyees, friends, etc.). In this blog, I plan on documenting various things I do related to IT that I find interesting and worth sharing. You can expect this to include some home projects on my raspberry pi, walkthroughs of &lt;a href=&quot;https://hackthebox.eu&quot;&gt;hackthebox&lt;/a&gt;/ctf’s, and generally anything else I find cool. Also, I find myself funny, so please try not to cringe to hard at what I write/take offence from anything I say.&lt;/p&gt;
 
-&lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+&lt;p&gt;For my first post, I figured I’d document how I made &lt;em&gt;this&lt;/em&gt;, the blog itself. The process I went through to set it up, and how I made it look so damn pretty.&lt;/p&gt;
 
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+&lt;h1 id=&quot;how-i-setup-my-blog&quot;&gt;How I setup my blog&lt;/h1&gt;
+&lt;h2 id=&quot;intro-to-github-pages&quot;&gt;Intro to GitHub Pages&lt;/h2&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;p&gt;To start with, if you didn’t already know, this is running on a service called &lt;a href=&quot;https://pages.github.com/&quot;&gt;GitHub Pages&lt;/a&gt;. Essentially, the quickstart is as follows:&lt;/p&gt;
 
-&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.</summary></entry></feed>
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;You create a GitHub repo with the name &lt;code class=&quot;highlighter-rouge&quot;&gt;$USERNAME.github.io&lt;/code&gt; where &lt;code class=&quot;highlighter-rouge&quot;&gt;$USERNAME&lt;/code&gt; is your own GitHub username.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Next, you clone your repo.&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; git clone https://github.com/$USERNAME/$USERNAME.github.io
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Add whatever HTML you want&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; echo &quot;Hello World&quot; &amp;gt; index.html
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Push it&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; git add -A
+ git commit -m 'hello world'
+ git push -u origin master
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;GitHub will automagically see your new commit, and in a short time, build and publish your code available for you to visit at your very own website https://$USERNAME.github.io&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;How cool!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;intro-to-jekyll&quot;&gt;Intro to Jekyll&lt;/h2&gt;
+
+&lt;p&gt;Ok so having GitHub build and host a plain old HTML site for you is kinda cool I guess, but nothing to write home about. What &lt;em&gt;is&lt;/em&gt; cool however is the combination of Jekyll and GitHub Pages. But what is Jekyll you ask?&lt;/p&gt;
+
+&lt;p&gt;Jekyll is a static site generator with with built-in support for GitHub pages. Jekyll takes special Markdown and HTML files, and builds out a completely static website based upon them. For more about what Jekyll is and how it works, check out their &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;website&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;To use Jekyll with your own website:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;First install Ruby, Bundler and Jekyll. For Debian based systems:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; sudo apt update &amp;amp;&amp;amp; apt install ruby-full &amp;amp;&amp;amp; gem install bundler jekyll
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Create your new Jekyll site inside your repositories folder&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; bundle exec jekyll new /path/to/repository
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;If you want to have GitHub Pages automagically build your Jekyll site for you, open up the Gemfile and follow the instructions within the comments of that file regarding GitHub Pages.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;I’d make sure all the dependencies are up to date with&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; cd /path/to/repository &amp;amp;&amp;amp; bundle update
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Push your new code and wait for it to build.&lt;/li&gt;
+  &lt;li&gt;Congrats, you now have a cooler looking website that runs on Jekyll. To see all the benefits of using Jekyll, such as themes, templating, syntax highlighting and more, I’d encourage you again to check out their &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;website&lt;/a&gt;. I’d also recommend checking out how to build &amp;amp; serve your site locally for development purposes, as documented &lt;a href=&quot;https://help.github.com/en/github/working-with-github-pages/testing-your-github-pages-site-locally-with-jekyll&quot;&gt;here&lt;/a&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;making-jekyll-sexy&quot;&gt;Making Jekyll Sexy&lt;/h2&gt;
+&lt;p&gt;If you’re following along with this post, you might be wondering why my Jekyll site looks cooler than the black and white default of Jekyll. The answer is &lt;em&gt;themes&lt;/em&gt;. After trolling through the interwebs for about an hour or so, I stumbled upon this theme that I really liked, called &lt;a href=&quot;https://github.com/bitbrain/jekyll-dash&quot;&gt;Jekyll Dash&lt;/a&gt;. I decided this would be the theme for my blog, so I went about setting it up. &lt;strong&gt;This is where the fun begins.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Now in it’s current state, GitHub Pages is not capable of accepting user supplied plugins/gems to be installed as part of the build process, meaning that you cannot supply a theme (unless it’s one of the 13 supported themes) as follows in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt; file.&lt;/p&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;theme&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;jekyll-dash&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;GitHub’s workaround for this is to use the &lt;code class=&quot;highlighter-rouge&quot;&gt;remote_theme&lt;/code&gt; option which allows you to use any theme available in a GitHub repository as shown.&lt;/p&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;remote_theme&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;bitbrain/jekyll-dash&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This solved a lot of my problems, however the theme didn’t quite work as it did on &lt;a href=&quot;https://bitbrain.github.io&quot;&gt;Bitbrain’s blog&lt;/a&gt;. So I forked the the &lt;a href=&quot;https://github.com/bitbrain/jekyll-dash&quot;&gt;Jekyll Dash&lt;/a&gt; repo and started customizing the theme to make it look the way it was supposed to.&lt;/p&gt;
+
+&lt;p&gt;This solved the majority of problems, except for the fact that you still couldn’t supply your own plugins to be used as part of the build process for the site. In this case, the jekyll-dash theme used a &lt;code class=&quot;highlighter-rouge&quot;&gt;liquid-md5&lt;/code&gt; plugin to help support Gravatar image URL’s.&lt;/p&gt;
+
+&lt;p&gt;So after a bit of researching, I decided the best approach would be to build the site locally (that way I could use whatever plugins I pleased), and then push the result to GitHub for free hosting. Here’s how I achieved this:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Create a new branch called ‘source’. Since the repository is what GitHub terms a “user” site and not a “project” site, the only publishing source available is the master branch. This means that the code GitHub will build and publish will be taken from the master branch, so we will need another branch to store the source code for building our blog! &lt;strong&gt;NOTE:&lt;/strong&gt; If you do this, I would recommend changing the default branch of your repo to ‘source’!
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; git checkout -b source
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Install &lt;a href=&quot;https://github.com/yegor256/jekyll-github-deploy&quot;&gt;jgd&lt;/a&gt;. Jekyll-Github-Deploy (jgd) is a tool that will build your Jekyll site and push it to GitHub for you.
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; gem install jgd
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Build your site from the source branch and push it to the master branch!
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; bundle exec jgd --branch master --branch-from source
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Enjoy the freedom of plugins with Jekyll!&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;summary&quot;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;So, welcome to my blog! I briefly described how I set up my own blog with Jekyll and GitHub Pages, using whatever plugins/themes I wanted. Hope you enjoyed!&lt;/p&gt;</content><author><name></name></author><summary type="html">G’day! Today marks the day that I finally became one of those guys who has his own blog. The main reason for making this blog is so that I can show it off to other people (emplyees, friends, etc.). In this blog, I plan on documenting various things I do related to IT that I find interesting and worth sharing. You can expect this to include some home projects on my raspberry pi, walkthroughs of hackthebox/ctf’s, and generally anything else I find cool. Also, I find myself funny, so please try not to cringe to hard at what I write/take offence from anything I say.</summary></entry></feed>
