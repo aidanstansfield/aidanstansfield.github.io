@@ -106,10 +106,11 @@ So after a bit of researching, I decided the best approach would be to build the
 
 
 ## Summary
-So, welcome to my blog! I briefly described how I set up my own blog with Jekyll and GitHub Pages, using whatever plugins/themes I wanted. Hope you enjoyed!
+So, welcome to my blog! I briefly described how I set up my own blog with Jekyll and GitHub Pages, using whatever plugins/themes I wanted. All the source code for this blog (both master and source branch) is available [here][myrepo]. Hope you enjoyed!
 
 [hackthebox]: https://hackthebox.eu
 [gh-pages]: https://pages.github.com/
+[myrepo]: https://github.com/aidanstansfield/aidanstansfield.github.io
 [jekyll-local]: https://help.github.com/en/github/working-with-github-pages/testing-your-github-pages-site-locally-with-jekyll
 [bitbrain]: https://bitbrain.github.io
 [jekyll-dash]: https://github.com/bitbrain/jekyll-dash
