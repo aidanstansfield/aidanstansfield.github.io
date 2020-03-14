@@ -90,7 +90,7 @@ This solved the majority of problems, except for the fact that you still couldn'
 
 So after a bit of researching, I decided the best approach would be to build the site locally (that way I could use whatever plugins I pleased), and then push the result to GitHub for free hosting. Here's how I achieved this:
 
-1. Create a new branch called 'source'. Since the repository is what GitHub terms a "user" site and not a "project" site, the only publishing source available is the master branch. This means that the code GitHub will build and publish will be taken from the master branch, so we will need another branch to store the source code for building our blog!
+1. Create a new branch called 'source'. Since the repository is what GitHub terms a "user" site and not a "project" site, the only publishing source available is the master branch. This means that the code GitHub will build and publish will be taken from the master branch, so we will need another branch to store the source code for building our blog! **NOTE:** If you do this, I would recommend changing the default branch of your repo to 'source'!
     ```
     git checkout -b source
     ```
@@ -103,6 +103,7 @@ So after a bit of researching, I decided the best approach would be to build the
     bundle exec jgd --branch master --branch-from source
     ```
 4. Enjoy the freedom of plugins with Jekyll!
+
 
 ## Summary
 So, welcome to my blog! I briefly described how I set up my own blog with Jekyll and GitHub Pages, using whatever plugins/themes I wanted. Hope you enjoyed!
