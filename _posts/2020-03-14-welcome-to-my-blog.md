@@ -3,7 +3,7 @@ layout: post
 title:  "Welcome to my blog!"
 date:   2020-03-14 14:26
 ---
-G'day! Today marks the day that I finally became *one of those guys* who has his own blog. The main reason for making this blog is so that I can show it off to other people (emplyers, friends, etc.). In this blog, I plan on documenting various things I do related to IT that I find interesting and worth sharing. You can expect this to include some home projects on my raspberry pi, walkthroughs of [hackthebox][hackthebox]/ctf's, and generally anything else I find cool. Also, I find myself funny, so please try not to cringe to hard at what I write/take offence from anything I say.
+G'day! Today marks the day that I finally became *one of those guys* who has his own blog. The main reason for making this blog is so that I can show it off to other people (emplyers, friends, etc.). In this blog, I plan on documenting various things I do related to IT that I find interesting and worth sharing. You can expect this to include some home projects on my raspberry pi, walkthroughs of [hackthebox][hackthebox]/ctf's, and generally anything else I find cool. Also, I find myself funny, so please try not to cringe too hard at what I write/take offence from anything I say.
 
 For my first post, I figured I'd document how I made *this*, the blog itself. The process I went through to set it up, and how I made it look so damn pretty.
 
