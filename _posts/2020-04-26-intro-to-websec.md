@@ -12,8 +12,12 @@ That being said, here's the links:
 
 [Slides][slides]
 
+[Challenges][challenges]
+
 Enjoy!
 
 [uqcs]: https://cybersquad.uqcloud.net/
 [video]: https://drive.google.com/open?id=1c37tw3RH1CqAYF_pu6lKc3SFGYe8HSDm
 [slides]: https://drive.google.com/open?id=1mTnQG0nP3FYmRiP8mfeoa7lDJzWTU9gs
+[challenges]: https://ctf.uqcloud.net/
+
