@@ -446,6 +446,10 @@ Donezo.
 # Summary
 Well, that was a ride! We exploited a bunch of services, including the Docker Registry API, Bolt CMS and Restic. Although the machine was quite complex, I hope my walkthrough was easy enough to follow. This is my first walkthrough, so if you have any feedback please leave it in a comment below!
 
+If this walkthrough helped you, feel free to /respect me on Hack The Box :)
+
+<a href="https://www.hackthebox.eu/profile/119119"><script src="https://www.hackthebox.eu/badge/119119"></script></a>
+
 [docker_blog]: https://www.notsosecure.com/anatomy-of-a-hack-docker-registry/
 [docker_blog_github]: https://github.com/NotSoSecure/docker_fetch/
 [registry]: https://www.hackthebox.eu/home/machines/profile/213
