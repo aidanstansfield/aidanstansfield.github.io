@@ -448,7 +448,7 @@ Well, that was a ride! We exploited a bunch of services, including the Docker Re
 
 If this walkthrough helped you, feel free to /respect me on Hack The Box :)
 
-<a href="https://www.hackthebox.eu/home/users/profile/119118"><script src="https://www.hackthebox.eu/badge/119119"></script></a>
+<a href="https://www.hackthebox.eu/home/users/profile/119119"><script src="https://www.hackthebox.eu/badge/119119"></script></a>
 
 [docker_blog]: https://www.notsosecure.com/anatomy-of-a-hack-docker-registry/
 [docker_blog_github]: https://github.com/NotSoSecure/docker_fetch/
