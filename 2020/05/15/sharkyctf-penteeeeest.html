@@ -158,7 +158,7 @@ Service detection performed. Please report any incorrect results at https://nmap
 <p><img src="/assets/img/penteeeeest/login.png" alt="login" /></p>
 <h2 id="finding-credentials">Finding Credentials</h2>
 <h3 id="intended-way---viewing-source-code">Intended Way - Viewing Source Code</h3>
-<p>Viewing the <a href="https://github.com/Michael-SharkyMaster/website/blob/5f46d8bc779c4c4f1ed9d5ecde71c330d81c970b/admin/login.php#L8">login source code</a> however, we can see that the username is 'Michael' and there are credentials stored in a file <strong>&quot;creds.txt&quot;</strong>. A simple cURL will get us our password and just like that we're in.</p>
+<p>Viewing the <a href="https://github.com/Michael-SharkyMaster/website/blob/5f46d8bc779c4c4f1ed9d5ecde71c330d81c970b/admin/login.php#L8">login source code</a>, we can see that the username is 'Michael' and there are credentials stored in a file <strong>&quot;creds.txt&quot;</strong>. A simple cURL will get us our password and just like that we're in.</p>
 <pre><code>kali@kali:~/sharky/penteeeeest$ curl 172.30.0.2/admin/creds.txt
 Badger1992
 </code></pre>
