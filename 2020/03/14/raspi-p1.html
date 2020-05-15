@@ -3,19 +3,19 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>The Raspberry Pi Project: Part 1 - The Context | Aidan’s Blog</title>
-<meta name="generator" content="Jekyll v3.8.6" />
+<title>The Raspberry Pi Project: Part 1 - The Context | Aidan&#39;s Blog</title>
+<meta name="generator" content="Jekyll v3.8.7" />
 <meta property="og:title" content="The Raspberry Pi Project: Part 1 - The Context" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="So I recently acquired a Raspberry Pi 4 with 4GB of RAM accompanied by a fantastic FLIRC case to replace my Raspberry Pi 3B+. Up until now, I had been using my Raspberry Pi 3B+ for a mix of things, including: A web server running NGINX, with automated SSL certs from Let’s Encrypt so I can serve cool web content I develop. A DNS server running Pihole to block ads on my network An OpenVPN server so I can VPN into my home network from wherever A Dynamic DNS updater for DuckDNS, so I don’t have to deal with pesky IP addresses. A development environment for various embedded systems projects that use the Pi’s GPIO pins." />
-<meta property="og:description" content="So I recently acquired a Raspberry Pi 4 with 4GB of RAM accompanied by a fantastic FLIRC case to replace my Raspberry Pi 3B+. Up until now, I had been using my Raspberry Pi 3B+ for a mix of things, including: A web server running NGINX, with automated SSL certs from Let’s Encrypt so I can serve cool web content I develop. A DNS server running Pihole to block ads on my network An OpenVPN server so I can VPN into my home network from wherever A Dynamic DNS updater for DuckDNS, so I don’t have to deal with pesky IP addresses. A development environment for various embedded systems projects that use the Pi’s GPIO pins." />
+<meta name="description" content="So I recently acquired a Raspberry Pi 4 with 4GB of RAM accompanied by a fantastic FLIRC case to replace my Raspberry Pi 3B+. Up until now, I had been using my Raspberry Pi 3B+ for a mix of things, including: A web server running NGINX, with automated SSL certs from Let&#39;s Encrypt so I can serve cool web content I develop. A DNS server running Pihole to block ads on my network An OpenVPN server so I can VPN into my home network from wherever A Dynamic DNS updater for DuckDNS, so I don&#39;t have to deal with pesky IP addresses. A development environment for various embedded systems projects that use the Pi&#39;s GPIO pins." />
+<meta property="og:description" content="So I recently acquired a Raspberry Pi 4 with 4GB of RAM accompanied by a fantastic FLIRC case to replace my Raspberry Pi 3B+. Up until now, I had been using my Raspberry Pi 3B+ for a mix of things, including: A web server running NGINX, with automated SSL certs from Let&#39;s Encrypt so I can serve cool web content I develop. A DNS server running Pihole to block ads on my network An OpenVPN server so I can VPN into my home network from wherever A Dynamic DNS updater for DuckDNS, so I don&#39;t have to deal with pesky IP addresses. A development environment for various embedded systems projects that use the Pi&#39;s GPIO pins." />
 <link rel="canonical" href="https://aidanstansfield.github.io/2020/03/14/raspi-p1.html" />
 <meta property="og:url" content="https://aidanstansfield.github.io/2020/03/14/raspi-p1.html" />
-<meta property="og:site_name" content="Aidan’s Blog" />
+<meta property="og:site_name" content="Aidan&#39;s Blog" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-03-14T19:30:00+10:00" />
 <script type="application/ld+json">
-{"@type":"BlogPosting","url":"https://aidanstansfield.github.io/2020/03/14/raspi-p1.html","headline":"The Raspberry Pi Project: Part 1 - The Context","dateModified":"2020-03-14T19:30:00+10:00","datePublished":"2020-03-14T19:30:00+10:00","description":"So I recently acquired a Raspberry Pi 4 with 4GB of RAM accompanied by a fantastic FLIRC case to replace my Raspberry Pi 3B+. Up until now, I had been using my Raspberry Pi 3B+ for a mix of things, including: A web server running NGINX, with automated SSL certs from Let’s Encrypt so I can serve cool web content I develop. A DNS server running Pihole to block ads on my network An OpenVPN server so I can VPN into my home network from wherever A Dynamic DNS updater for DuckDNS, so I don’t have to deal with pesky IP addresses. A development environment for various embedded systems projects that use the Pi’s GPIO pins.","mainEntityOfPage":{"@type":"WebPage","@id":"https://aidanstansfield.github.io/2020/03/14/raspi-p1.html"},"@context":"https://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://aidanstansfield.github.io/2020/03/14/raspi-p1.html"},"@type":"BlogPosting","url":"https://aidanstansfield.github.io/2020/03/14/raspi-p1.html","headline":"The Raspberry Pi Project: Part 1 - The Context","dateModified":"2020-03-14T19:30:00+10:00","datePublished":"2020-03-14T19:30:00+10:00","description":"So I recently acquired a Raspberry Pi 4 with 4GB of RAM accompanied by a fantastic FLIRC case to replace my Raspberry Pi 3B+. Up until now, I had been using my Raspberry Pi 3B+ for a mix of things, including: A web server running NGINX, with automated SSL certs from Let&#39;s Encrypt so I can serve cool web content I develop. A DNS server running Pihole to block ads on my network An OpenVPN server so I can VPN into my home network from wherever A Dynamic DNS updater for DuckDNS, so I don&#39;t have to deal with pesky IP addresses. A development environment for various embedded systems projects that use the Pi&#39;s GPIO pins.","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/css/style.css">
   <link rel="icon" type="image/png" href="/assets/favicon.png" /><link type="application/atom+xml" rel="alternate" href="https://aidanstansfield.github.io/feed.xml" title="Aidan's Blog" /></head>
@@ -29,12 +29,14 @@
 </div>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <div class="author-box">
+        
+  <div class="author-box">
 
 <img src="https://gravatar.com/avatar/47d8936d80a1b1c3b637741f001626a2?s=256" class="author-avatar" />
 
 G'day, I'm Aidan and I like to make things, almost as much as I like to break things. In this blog you can expect to find writeups of various home/personal projects, as well as hackthebox/ctf writeups. Hope you enjoy!
 </div>
+
 
 <div class="post">
   <h1 class="post-title">The Raspberry Pi Project: Part 1 - The Context</h1>
@@ -43,24 +45,19 @@ G'day, I'm Aidan and I like to make things, almost as much as I like to break th
   
   <p>So I recently acquired a <a href="https://core-electronics.com.au/raspberry-pi-4-model-b-4gb.html">Raspberry Pi 4 with 4GB of RAM</a> accompanied by a fantastic <a href="https://core-electronics.com.au/flirc-raspberry-pi-4-case.html">FLIRC case</a> to replace my Raspberry Pi 3B+. Up until now, I had been using my Raspberry Pi 3B+ for a mix of things, including:</p>
 <ol>
-  <li>A web server running <a href="https://www.nginx.com/">NGINX</a>, with automated SSL certs from <a href="https://letsencrypt.org/">Let’s Encrypt</a> so I can serve cool web content I develop.</li>
-  <li>A DNS server running <a href="https://pi-hole.net/">Pihole</a> to block ads on my network</li>
-  <li>An <a href="https://openvpn.net/">OpenVPN</a> server so I can VPN into my home network from wherever</li>
-  <li>A Dynamic DNS updater for <a href="https://www.duckdns.org/">DuckDNS</a>, so I don’t have to deal with pesky IP addresses.</li>
-  <li>A development environment for various embedded systems projects that use the Pi’s GPIO pins.</li>
+<li>A web server running <a href="https://www.nginx.com/">NGINX</a>, with automated SSL certs from <a href="https://letsencrypt.org/">Let's Encrypt</a> so I can serve cool web content I develop.</li>
+<li>A DNS server running <a href="https://pi-hole.net/">Pihole</a> to block ads on my network</li>
+<li>An <a href="https://openvpn.net/">OpenVPN</a> server so I can VPN into my home network from wherever</li>
+<li>A Dynamic DNS updater for <a href="https://www.duckdns.org/">DuckDNS</a>, so I don't have to deal with pesky IP addresses.</li>
+<li>A development environment for various embedded systems projects that use the Pi's GPIO pins.</li>
 </ol>
-
-<p>So now comes the fun part of migrating all of these services over to the new Pi. Unfortuantely, since the Raspberry Pi 4 runs on a newer version of Raspbian (Buster), it’s not just a simple case of swapping over the SD cards and it all working.</p>
-
+<p>So now comes the fun part of migrating all of these services over to the new Pi. Unfortuantely, since the Raspberry Pi 4 runs on a newer version of Raspbian (Buster), it's not just a simple case of swapping over the SD cards and it all working.</p>
 <p>So I started thinking to myself,</p>
 <blockquote>
-  <p>How can I make this migration/setup easier for the future?</p>
+<p>How can I make this migration/setup easier for the future?</p>
 </blockquote>
-
-<p>The answer I eventually arrived at, <strong>Docker &amp; Docker Compose.</strong> The reason I decided upon this approach is that in the event that my SD card dies, or I want to setup a new SD card for X reason, all I should have to do is install the OS and Docker/Docker Compose, and then <strong>BAM</strong> everything is up and running with a few <code class="highlighter-rouge">docker-compose up</code>’s. Sounds easy, right?</p>
-
-<p>Well that’s what I thought when I set out on this journey, but boy did I have a few late nights. In this series, I plan to detail this journey, rabbit holes and source code included. Stay tuned!</p>
-
+<p>The answer I eventually arrived at, <strong>Docker &amp; Docker Compose.</strong> The reason I decided upon this approach is that in the event that my SD card dies, or I want to setup a new SD card for X reason, all I should have to do is install the OS and Docker/Docker Compose, and then <strong>BAM</strong> everything is up and running with a few <code>docker-compose up</code>'s. Sounds easy, right?</p>
+<p>Well that's what I thought when I set out on this journey, but boy did I have a few late nights. In this series, I plan to detail this journey, rabbit holes and source code included. Stay tuned!</p>
 
 </div>
 

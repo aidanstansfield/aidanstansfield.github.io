@@ -4414,21 +4414,6 @@ readers do not read off random characters that represent icons */
 .fab {
   font-family: 'Font Awesome 5 Brands'; }
 
-/*!
- * Font Awesome Pro 5.8.2 by @fontawesome - https://fontawesome.com
- * License - https://fontawesome.com/license (Commercial License)
- */
-@font-face {
-  font-family: 'Font Awesome 5 Pro';
-  font-style: normal;
-  font-weight: 300;
-  font-display: auto;
-  src: url("../fonts/fa-light-300.eot");
-  src: url("../fonts/fa-light-300.eot?#iefix") format("embedded-opentype"), url("../fonts/fa-light-300.woff2") format("woff2"), url("../fonts/fa-light-300.woff") format("woff"), url("../fonts/fa-light-300.ttf") format("truetype"), url("../fonts/fa-light-300.svg#fontawesome") format("svg"); }
-.fal {
-  font-family: 'Font Awesome 5 Pro';
-  font-weight: 300; }
-
 @font-face {
   font-family: "Varela Round";
   src: url("/assets/fonts/VarelaRound-Regular.eot");
@@ -4807,13 +4792,6 @@ pre {
       color: #ade0b9; }
     .theme--light .post ul > li {
       color: #50BD6A; }
-    .post ul > li svg {
-      margin-right: 0.65em;
-      margin-bottom: -1px; }
-      .theme--dark .post ul > li svg {
-        color: #50BD6A; }
-      .theme--light .post ul > li svg {
-        color: #9ad9a9; }
     .post ul > li:before {
       content: "";
       font-family: "Font Awesome 5 Free";
@@ -4822,7 +4800,8 @@ pre {
       font-variant: normal;
       text-rendering: auto;
       font-weight: 900;
-      -webkit-font-smoothing: antialiased; }
+      -webkit-font-smoothing: antialiased;
+      margin-right: 0.5em; }
   .post ul, .post ol {
     padding: 0;
     margin-left: 0.5em; }
@@ -4835,6 +4814,9 @@ pre {
       color: #fddb8d; }
     .theme--light .post > blockquote {
       color: #FCBC28; }
+    .post > blockquote > p {
+      display: block;
+      padding-left: 3em; }
     .post > blockquote:before {
       content: "";
       font-family: "Font Awesome 5 Free";
@@ -4843,34 +4825,24 @@ pre {
       font-variant: normal;
       text-rendering: auto;
       font-weight: 900;
-      -webkit-font-smoothing: antialiased; }
-    .post > blockquote > svg.svg-inline--fa {
+      -webkit-font-smoothing: antialiased;
+      margin-right: -2em;
       float: left;
-      width: 3em;
-      height: 3em;
-      margin-right: 1em; }
-      .theme--dark .post > blockquote > svg.svg-inline--fa {
-        color: #fddb8d; }
-      .theme--light .post > blockquote > svg.svg-inline--fa {
-        color: #FCBC28; }
-    .theme--dark .post > blockquote > ul > li > svg {
-      color: #fddb8d; }
-    .theme--light .post > blockquote > ul > li > svg {
-      color: #FCBC28; }
+      font-size: 2em; }
     .theme--dark .post > blockquote li {
       color: #FCBC28; }
     .theme--light .post > blockquote li {
       color: #eea703; }
     .post > blockquote li:before {
       content: ""; }
-    .post > blockquote li > svg {
-      margin-left: 2em; }
 
 .post-link-wrapper {
   margin-bottom: 1.1em; }
   .post-link-wrapper > .post-link {
     font-size: 16px;
-    font-size: 20px; }
+    font-size: 20px;
+    display: inline-block;
+    text-align: initial; }
   .post-link-wrapper > .post-meta {
     font-size: 14px; }
     .theme--dark .post-link-wrapper > .post-meta {
@@ -4883,7 +4855,7 @@ pre {
   text-align: left; }
   .tag-cloud > a {
     display: inline-block;
-    margin-bottom: 1em; }
+    margin: 0.3em 0.3em 0.3em 0; }
 
 .tag, .tag-cloud > a {
   color: #50BD6A;
@@ -4900,8 +4872,6 @@ pre {
       background-color: #292f35; }
     .theme--light .tag:hover, .theme--light .tag-cloud > a:hover {
       background-color: white; }
-  .tag > svg, .tag-cloud > a > svg {
-    margin-right: 0.4em; }
   .tag:before, .tag-cloud > a:before {
     content: "";
     font-family: "Font Awesome 5 Free";
@@ -4913,9 +4883,14 @@ pre {
     -webkit-font-smoothing: antialiased;
     margin-right: 0.5em; }
 
+.tag {
+  display: inline-block;
+  margin: 0.3em 0.3em 0.3em 0; }
+
 .post-tags {
   margin-top: 0.3em;
-  margin-bottom: 0.5em; }
+  margin-bottom: 0.5em;
+  text-align: initial; }
 
 .credits {
   font-size: 10px; }
@@ -4942,8 +4917,6 @@ pre {
     text-align: center; }
     .pagination > a:hover, .pagination > span:hover {
       text-decoration: none; }
-    .pagination > a svg, .pagination > span svg {
-      padding-left: 0.1em; }
   .pagination > a {
     color: #50BD6A; }
     .theme--dark .pagination > a {
@@ -4999,7 +4972,8 @@ ul.related-posts {
       text-rendering: auto;
       font-weight: 900;
       -webkit-font-smoothing: antialiased;
-      color: #50BD6A; }
+      color: #50BD6A;
+      margin-right: 0.5em; }
 
 #theme-toggle {
   background-color: transparent;
@@ -5309,3 +5283,33 @@ input:checked + .toggle {
     color: #F24784; }
   .highlight .il {
     color: #EA9D53; }
+
+/*!
+ * Font Awesome Pro 5.8.2 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license (Commercial License)
+ */
+@font-face {
+  font-family: 'Font Awesome 5 Pro';
+  font-style: normal;
+  font-weight: 300;
+  font-display: auto;
+  src: url("../fonts/fa-light-300.eot");
+  src: url("../fonts/fa-light-300.eot?#iefix") format("embedded-opentype"), url("../fonts/fa-light-300.woff2") format("woff2"), url("../fonts/fa-light-300.woff") format("woff"), url("../fonts/fa-light-300.ttf") format("truetype"), url("../fonts/fa-light-300.svg#fontawesome") format("svg"); }
+.fal {
+  font-family: 'Font Awesome 5 Pro';
+  font-weight: 300; }
+
+.post ul > li:before {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  font-weight: 900;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Pro";
+  margin: 0px 10px 0px 0px; }
+
+details > summary {
+  color: #F24784; }
