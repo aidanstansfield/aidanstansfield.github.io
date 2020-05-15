@@ -1,0 +1,22 @@
+---
+---
+
+@import "dash.scss";
+
+@import "fa/light";
+
+.post {
+    ul > li {
+
+        &:before {
+            content: fa-content($fa-var-circle);
+            @include font-awesome-icon;
+            font-family: "Font Awesome 5 Pro";
+            margin: 0px 10px 0px 0px;
+        }
+    }
+}
+
+details > summary {
+    color: $color-pink;
+}

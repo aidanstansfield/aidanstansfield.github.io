@@ -23,6 +23,7 @@ gem "jgd"
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.6"
   gem "liquid-md5"
+  gem "jekyll-commonmark-ghpages"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
