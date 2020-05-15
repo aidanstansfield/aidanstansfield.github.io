@@ -135,7 +135,7 @@ To start with, there is a **"/admin"** section to the website, which contains an
 
 ### Intended Way - Viewing Source Code
 
-Viewing the [login source code][login] however, we can see that the username is 'Michael' and there are credentials stored in a file **"creds.txt"**. A simple cURL will get us our password and just like that we're in.
+Viewing the [login source code][login], we can see that the username is 'Michael' and there are credentials stored in a file **"creds.txt"**. A simple cURL will get us our password and just like that we're in.
 
 ```
 kali@kali:~/sharky/penteeeeest$ curl 172.30.0.2/admin/creds.txt
