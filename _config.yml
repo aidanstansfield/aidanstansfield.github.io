@@ -48,6 +48,10 @@ dash:
   # generate social links in footer
   # supported colors: green, red, orange, blue, cyan, pink, teal, yellow, indigo, purple
   social_links:
+    - url: https://twitter.com/aidanstansfield
+      icon: twitter
+      color: cyan
+      style: b
     - url: https://app.hackthebox.eu/profile/119119
       icon: cube
       color: green
@@ -58,7 +62,7 @@ dash:
       style: b # brand
     - url: https://linkedin.com/in/aidanstansfield
       icon: linkedin-in
-      color: cyan
+      color: blue
       style: b # brand
 # The fmllowing items will not be processed, by default. Create a custom list
 # to override the default setting.
